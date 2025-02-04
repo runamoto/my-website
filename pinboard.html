@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pinboard</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <!-- WRITING STARTS HERE -->
+        <div class="card">
+          <h1>Aaryans new blog</h1>
+          <h2>Dec 7, 2017</h2>
+          <div><img src="images/aaryan.png" class="image" width="500"</div>
+          <p>Some text..</p>
+          <p>
+            Aaryan recently started a feed of his own [so fun] I love this
+            concept of articulation through documentation. I think we should all
+            do it. Check out his feed
+            <a href="https://feed.a-p.space/"> here </a>—15.01.25
+          </p>
+        </div>
+
+        <style>
+          body {
+            background-image: url("images/repeat.jpg");
+            background-repeat: repeat;
+            background-size: 80% 300%;
+            font-family: "basiic", sans-serif;
+            padding: 20px;
+            background: #f1f1f1;
+          }
+
+          /* ----------------font--------------- */
+
+          @font-face {
+            font-family: basicc;
+            src: url("fonts/basiic.ttf");
+          }
+
+          a:hover {
+            color: #bf86be;
+            text-decoration: underline;
+          }
+
+          li {
+            color: #68b084;
+            -webkit-text-stroke: 0.25px #336952;
+            text-shadow: #dc789a 1px 0 10px;
+            font-size: 15px;
+          }
+
+          h1 {
+            color: #68b084;
+            -webkit-text-stroke: 0.75px #336952;
+            text-shadow: #f0e40c 1px 0 10px;
+            font-size: 40px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          h3 {
+            font-size: 15px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+
+          * {
+            box-sizing: border-box;
+          }
+
+          .image {
+            box-shadow: #dc789a 1px 0 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          /* Header/Blog Title */
+          .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+          }
+
+          /* Create two unequal columns that floats next to each other */
+          /* Left column */
+          .leftcolumn {
+            float: left;
+            width: 50%;
+          }
+
+          /*  a card effect  */
+          .card {
+            background-color: #eae8e5;
+            padding: 20px;
+            margin-top: 20px;
+          }
+
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 800px) {
+            .leftcolumn {
+              width: 100%;
+              padding: 0;
+            }
+          }
+        </style>
+      </div>
+    </div>
+  </body>
+</html>
