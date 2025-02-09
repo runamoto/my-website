@@ -1,0 +1,229 @@
+:root {
+  --header-image: url("https://sadhost.neocities.org/images/layouts/wp.jpeg");
+  --body-bg-image: url("https://omama.neocities.org/grass2.jpg");
+
+  /* colors */
+  --content: #43256e;
+}
+
+/* ----------------font--------------- */
+
+@font-face {
+  font-family: "runa";
+  src: url("./fonts/runatype.ttf");
+}
+
+a:hover {
+  color: #bf86be;
+  text-decoration: underline;
+}
+
+body {
+  font-family: "runa", sans-serif;
+  margin: 0;
+  background-color: #32a852;
+  /* background image adjusterr*/
+  background-size: cover;
+  color: #47984e;
+  background-image: var(--body-bg-image);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 900px;
+  /* width of layout! */
+
+  margin: 0 auto;
+  /* *center barge* */
+}
+
+li {
+  color: #68b084;
+  -webkit-text-stroke: 0.25px #336952;
+  text-shadow: #dc789a 1px 0 10px;
+  font-size: 15px;
+}
+
+h1 {
+  color: #68b084;
+  -webkit-text-stroke: 0.75px #336952;
+  text-shadow: #f0e40c 1px 0 10px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* ---------------header section!!------------*/
+#header {
+  width: 100%;
+  background-color: #c7d468;
+  /* header color here! */
+  height: 20px;
+  /* this is only for a background image! */
+  /*background-image: var(--header-image);*/
+  background-size: 100%;
+}
+
+/* ---------------navigation section!!------------*/
+
+#navbar {
+  height: 40px;
+  background-color: #13092d;
+  /* navbar color */
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+#navbar li {
+  padding-top: 10px;
+}
+
+/* navigation links*/
+#navbar li a {
+  color: #c7d468;
+  -webkit-text-stroke: 0.25px #336952;
+  /* navbar text color */
+  font-weight: 800;
+  /* this removes the underline */
+  /*text-decoration: none;*/
+}
+
+/* navigation link when a link is hovered over */
+#navbar li a:hover {
+  color: #bf86be;
+  text-decoration: underline;
+}
+
+#flex {
+  display: flex;
+}
+
+/* SIDEBAR DESIGN */
+aside {
+  background-color: #eae8e5;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  /* this makes the sidebar text slightlyyyy smaller */
+  font-size: smaller;
+}
+
+/* pinboard box */
+.box {
+  background-color: #c7d468;
+  border: 1px solid #ed64f5;
+  padding: 10px;
+}
+
+/* links in sidebar*/
+#container a {
+  color: #edaecf;
+  -webkit-text-stroke: 0.25px #d14141;
+  stroke-width: 1;
+  font-weight: bold;
+
+  /*text-decoration:none;*/
+}
+
+/* MAIN AREA */
+main {
+  background-color: #eae8e5;
+  flex: 1;
+  order: 2;
+  border-radius: 10px;
+  margin: 20px;
+  /* ---------buttons border image */
+  border: 100px solid;
+  border-image: url("https://omama.neocities.org/button-border-removebg-preview.png")
+    round 140;
+}
+
+*/ #leftSidebar {
+  order: 1;
+}
+
+/* only if i feel like adding another side bar later */
+/*#rightSidebar {*/
+/*    order: 3;*/
+/*}*/
+
+footer {
+  /* background color for footer */
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  /* centers the footer text */
+  margin: 20px;
+}
+
+strong {
+  /* bold text style*/
+  color: #ed64f5;
+}
+
+/* CSS for extras */
+
+#topBar {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: smaller;
+  background-color: #13092d;
+}
+
+/* BELOW IS MEDIA QUERY */
+
+/* by default, the container width is 900px.
+in order to keep things responsive, take  new height,
+and then subtrack it by 100. use this new number as the
+"max-width" value neechay
+*/
+
+@media only screen and (max-width: 800px) {
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  /* the order of the items*/
+  main {
+    order: 1;
+  }
+
+  #leftSidebar {
+    order: 2;
+  }
+
+  #rightSidebar {
+    order: 3;
+  }
+
+  #navbar ul {
+    flex-wrap: wrap;
+  }
+}
