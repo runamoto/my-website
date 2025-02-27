@@ -13,7 +13,7 @@
       background-size: 80% 300%;
       font-family: "runa", sans-serif;
       padding: 20px;
-      background: #c4d9ed;
+      background: #e0e0e0;
     }
 
     /* ----------------font--------------- */
@@ -91,9 +91,12 @@
     /*  a card effect  */
     .card {
       margin-top: 20px;
-      background-color: #d7fbad86;
+      background-color: #f1c7dd;
       padding: 20px;
-      border-radius: 3%;
+
+      -webkit-box-shadow: 0px 0px 118px 83px #f2b6d5;
+      -moz-box-shadow: 0px 0px 118px 83px #f2b6d5;
+      box-shadow: 0px 0px 118px 83px #f2b6d5;
     }
 
     /* Clear floats after the columns */
@@ -110,6 +113,25 @@
         padding: 0;
       }
     }
+    .scrollGradient {
+      background: linear-gradient(#feffff 33%, rgba(254, 255, 255, 0)),
+        linear-gradient(rgba(254, 255, 255, 0), #feffff 66%) 0 100%,
+        radial-gradient(
+          farthest-side at 50% 0,
+          rgba(255, 64, 255, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        radial-gradient(
+            farthest-side at 50% 100%,
+            rgba(255, 64, 255, 0.5),
+            rgba(0, 0, 0, 0)
+          )
+          0 100%;
+      background-color: #feffff;
+      background-repeat: no-repeat;
+      background-attachment: local, local, scroll, scroll;
+      background-size: 100% 150px, 100% 150px, 100% 50px, 100% 50px;
+    }
   </style>
 
   <body>
@@ -120,6 +142,36 @@
           <p><a href="https://omama.garden">Home</a></p>
         </div>
         <!-- WRITING STARTS HERE -->
+        <div class="card">
+          <h1></h1>
+          <h2>Feb 27 1:44am</h2>
+          <p>
+            Morning everyone!! It's been a while. I recently got my Holga film
+            developed! The
+            <a
+              href="https://web.archive.org/web/20070118212754/http://shop.lomography.com/holga/history/"
+              >Holga</a
+            >
+            is really interesting because it's actually a plastic "toy camera",
+            introduced in Hong Kong to bring photography to the working class
+            during a technological boom and trend in photography as a hobby.
+            <br /><br />The camera was introduced to me by Roderick Grant for
+            the reason that it was an affordable, beginner friendly camera that
+            who's beauty is in it's constraints. I picked one up for my birthday
+            from a guy on facebook marketplace and took it to Dubai where I took
+            most of the pictures and they came out better than I could have
+            imagined
+          </p>
+          <img src="./pinboard-images/holga1.jpg" class="image" width="500" />
+          <img src="./pinboard-images/holga2.jpg" class="image" width="500" />
+          <img src="./pinboard-images/holga3.jpg" class="image" width="500" />
+          <p>
+            BTW!! I've gotten better at using VIM, I made a little cheat sheet
+            on my sticky note app and made it so it's on top of vs code so
+            that's been suuper helpful.
+          </p>
+        </div>
+
         <div class="card">
           <h1></h1>
           <h2>Feb 13, 2025</h2>
@@ -135,6 +187,7 @@
             white tbh.
           </p>
         </div>
+
         <div class="card">
           <h1></h1>
           <h2>Feb 12, 2025</h2>
