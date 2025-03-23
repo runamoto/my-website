@@ -8,19 +8,34 @@
     <link href="/portfolio.css" rel="stylesheet" type="text/css" media="all" />
   </head>
   <body>
-    <img src="portfolio-images/anandi_moon2construction_sailorj.gif" alt="" />
-    <img src="portfolio-images/fairy.gif" alt="" />
-    <img src="portfolio-images/construction.gif" alt="" />
-    <img
-      src="portfolio-images/HeHeartlandPark9227gifconstructionwomen_at_work.gif"
-      alt=""
-    />
-    <img src="portfolio-images/mama.gif" alt="" />
-    <img src="portfolio-images/skull.gif" alt="" />
+    <div class="container"></div>
+    <h1>hello world</h1>
+    <script src="./portfolio.js" type="module"></script>
   </body>
   <style>
+    img {
+      width: 98%;
+    }
     body {
-      background-color: black;
+      background-color: white;
+      font-family: monospace;
+    }
+
+    .container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .channel {
+      width: 80%;
+      border: 1px solid black;
+    }
+
+    .block {
+      padding: 0.5em;
     }
   </style>
 </html>
