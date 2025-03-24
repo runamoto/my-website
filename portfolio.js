@@ -14,9 +14,9 @@ function render_channel(channel) {
 }
 
 function render_block(block) {
-  if (block.class == "Image") image(block)
+  if (block.class == "Image") return image(block)
   if (block.class == "Attachment"
-    && block.attachment.extension == "mp4") mp4(block)
+    && block.attachment.extension == "mp4") return mp4(block)
 }
 
 function image(block) {
