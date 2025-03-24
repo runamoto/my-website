@@ -2,31 +2,35 @@ function render_channel(channel) {
   let blocks = channel.contents.map(render_block).join("");
 
   document.querySelector(".project-container").innerHTML += `
-  <div class="channel">
-    <div class="metadata-container">
+    <div class="channel">
+      <div class="metadata-container">
         <h1>${channel.title}</h1>
-    </div>
-    <div class="image-container">
+      </div>
+      <div class="image-container">
         ${blocks}
+      </div>
     </div>
-  </div>
-  `;
+    `;
 }
 
 function render_block(block) {
-  if (block.class == "Image") {
-    return `
+  if (block.class == "Image") image(block)
+  if (block.class == "Attachment"
+    && block.attachment.extension == "mp4") mp4(block)
+}
+
+function image(block) {
+  return `
     <div class="block">
       <img src= ${block.image?.display.url}></img>
     </div>`;
-  }
+}
 
-  if (block.class == "Attachment" && block.attachment.extension == "mp4") {
-    return `
+function mp4(block) {
+  return `
     <div class="block">
       <video src= ${block.attachment.url} controls></video>
     </div>`;
-  }
 }
 
 let init = (channels) => channels.forEach(render_channel)
