@@ -1,43 +1,39 @@
-console.log("hello world");
 import { Arena } from "./arena.js";
 import { auth } from "./auth.js";
 let api = Arena({ auth });
 
-function render_channel(channel, selector) {
+function render_channel(channel) {
   let blocks = channel.contents.map(render_block).join("");
 
-  document.querySelector(selector).innerHTML += `
+  document.querySelector(".project-container").innerHTML += `
   <div class="channel">
-    <h1>${channel.title}</h1>
-    <h2>Total size ${channel.length}</p>
-    ${blocks}
+    <div class="metadata-container">
+        <h1>${channel.title}</h1>
+    </div>
+    <div class="image-container">
+        ${blocks}
+    </div>
   </div>
   `;
 }
 
 function render_block(block) {
-  let html = `
-  <div class="block">
-    <p>${block.title}</p>
-    <img src= ${block.image?.display.url}></img>
-  </div>`;
+  if (block.class == "Image") {
+    return `
+    <div class="block">
+      <img src= ${block.image?.display.url}></img>
+    </div>`;
+  }
 
-  return html;
+  if (block.class == "Attachment" && block.attachment.extension == "mp4") {
+    return `
+    <div class="block">
+      <video src= ${block.attachment.url} controls></video>
+    </div>`;
+  }
 }
 
-let projectList = [
-  "a-canvas-on-wheels",
-  "coffee-data-viz",
-  "cyberfeminism-poster-s4urhjkq874",
-  "faux-script-rvlg6-fb9m0",
-  "mixed-media-animation-publication",
-];
+let init = (channels) => channels.forEach(render_channel)
+fetch("./data.json").then(res => res.json()).then(init)
 
-projectList.forEach((slug) => {
-  api
-    .channel(slug)
-    .get()
-    .then(function (channel) {
-      render_channel(channel, ".container");
-    });
-});
+

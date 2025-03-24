@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="/portfolio.css" rel="stylesheet" type="text/css" media="all" />
-  </head>
-  <body>
-    <div class="container"></div>
-    <h1>hello world</h1>
-    <script src="./portfolio.js" type="module"></script>
-  </body>
-  <style>
-    img {
-      width: 98%;
-    }
-    body {
-      background-color: white;
-      font-family: monospace;
-    }
 
-    .container {
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
 
-    .channel {
-      width: 80%;
-      border: 1px solid black;
-    }
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-    .block {
-      padding: 0.5em;
-    }
-  </style>
+  img {
+    max-width: 98%;
+    max-height: 80vh;
+  }
+
+  body {
+    background-color: white;
+    font-family: monospace;
+  }
+
+  .main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 28% 70%;
+    grid-gap: 2%;
+  }
+
+  .project-container {
+    overflow-y: scroll;
+  }
+
+  .info {
+    padding: 2em;
+  }
+
+  .channel {
+    padding-top: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+
+  .metadata-container {}
+
+  .image-container {}
+
+  .block {
+    padding: 0.5em;
+  }
+</style>
+
+<body>
+
+  <div class="main">
+    <div class="info">
+      <h1>Omama Mahmood</h1>
+      <p> Seeds as timekeeping tools is highly impractical and unreliable. All seeds are not equal, they germinate at
+        different speeds based it's interactions with the living and nonliving components affecting it. Meaning relying
+        on it, would make it so that your time is not equal to that of the person next to you. </p>
+      <a href="#">Email</a>
+      <a href="#">Are.na</a>
+      <a href="#">Instagram</a>
+      <a href="#">Mastodon</a>
+    </div>
+
+    <div class="project-container"></div>
+  </div>
+
+  <script src="./portfolio.js" type="module"></script>
+</body>
+
 </html>

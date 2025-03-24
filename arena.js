@@ -14,8 +14,8 @@ function POST(url, body, auth) {
     typeof body == "object"
       ? JSON.stringify(body)
       : typeof body == "string"
-      ? body
-      : console.error("body unexpected");
+        ? body
+        : console.error("body unexpected");
   if (!b) throw Error("no body");
 
   return fetch(url, {
@@ -45,8 +45,6 @@ function POST(url, body, auth) {
 @returns {Promise<T>}
 */
 async function GET(url, auth) {
-  console.log("url", url);
-  console.log("auth", auth);
   return fetch(url, {
     headers: {
       Authorization: `Bearer ${auth}`,
@@ -76,8 +74,8 @@ function PUT(url, body, auth) {
     typeof body == "object"
       ? JSON.stringify(body)
       : typeof body == "string"
-      ? body
-      : console.error("body unexpected");
+        ? body
+        : console.error("body unexpected");
   if (!b) throw Error("no body");
 
   console.log("body", b);
