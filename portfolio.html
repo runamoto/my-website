@@ -9,19 +9,54 @@
 </head>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
   * {
     padding: 0;
     margin: 0;
   }
 
-  img {
+  h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+  }
+
+  p {
+    font-size: .9rem;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+
+  a {
+    all: unset;
+    cursor: crosshair;
+    text-decoration: underline;
+
+    font-size: .9rem;
+    margin-top: .5rem;
+  }
+
+  a p {
+    font-weight: 300;
+    margin-top: .5rem;
+  }
+
+  img,
+  video {
     max-width: 98%;
     max-height: 80vh;
   }
 
   body {
     background-color: white;
-    font-family: monospace;
+    font-family: "Roboto", sans-serif;
   }
 
   .main {
@@ -38,23 +73,34 @@
     overflow-y: scroll;
   }
 
+  .links {
+    margin-top: auto;
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+  }
+
   .info {
     padding: 2em;
+    position: relative;
   }
 
   .channel {
     padding-top: 2em;
     width: 100%;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: calc(45% - 1em) calc(55% - 1em);
+    grid-gap: 2em;
   }
 
-  .metadata-container {}
+  .metadata-container {
+    max-width: 30em;
+  }
 
   .image-container {}
 
   .block {
-    padding: 0.5em;
+    margin-bottom: 1em;
   }
 </style>
 
@@ -62,14 +108,24 @@
 
   <div class="main">
     <div class="info">
-      <h1>Omama Mahmood</h1>
+      <h4>Omama Mahmood</h4>
       <p> Seeds as timekeeping tools is highly impractical and unreliable. All seeds are not equal, they germinate at
         different speeds based it's interactions with the living and nonliving components affecting it. Meaning relying
         on it, would make it so that your time is not equal to that of the person next to you. </p>
-      <a href="#">Email</a>
-      <a href="#">Are.na</a>
-      <a href="#">Instagram</a>
-      <a href="#">Mastodon</a>
+      <div class="links">
+        <a href="#">
+          <p>Email</p>
+        </a>
+        <a href="#">
+          <p>Are.na</p>
+        </a>
+        <a href="#">
+          <p>Instagram</p>
+        </a>
+        <a href="#">
+          <p>Mastodon</p>
+        </a>
+      </div>
     </div>
 
     <div class="project-container"></div>
