@@ -1,7 +1,3 @@
-import { Arena } from "./arena.js";
-import { auth } from "./auth.js";
-let api = Arena({ auth });
-
 function render_channel(channel) {
   let blocks = channel.contents.map(render_block).join("");
 
