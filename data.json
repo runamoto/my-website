@@ -1148,14 +1148,14 @@
     "id": 3669545,
     "title": "A canvas on wheels ",
     "created_at": "2025-03-22T18:40:31.396Z",
-    "updated_at": "2025-03-24T02:46:47.938Z",
-    "added_to_at": "2025-03-23T17:52:03.933Z",
+    "updated_at": "2025-03-24T03:27:06.342Z",
+    "added_to_at": "2025-03-24T03:27:04.082Z",
     "published": false,
     "open": false,
     "collaboration": true,
     "collaborator_count": 1,
     "slug": "a-canvas-on-wheels",
-    "length": 5,
+    "length": 4,
     "kind": "default",
     "status": "private",
     "user_id": 426715,
@@ -1164,10 +1164,10 @@
       "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
       "bucket": "https://s3.amazonaws.com/arena_images-temp/",
       "success_action_status": "201",
-      "policy": "eydleHBpcmF0aW9uJzogJzIwMjUtMDMtMzFUMDI6NTA6MDEuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
+      "policy": "eydleHBpcmF0aW9uJzogJzIwMjUtMDMtMzFUMDM6Mjc6MTMuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
       "acl": "public-read",
-      "signature": "Px5xaZTgAHPQPbVgc/KjpZsAvco=",
-      "expires": "2025-03-31T02:50:01.000Z"
+      "signature": "xEJng2kN65AYsRFrrcVXIRQQbTg=",
+      "expires": "2025-03-31T03:27:13.000Z"
     },
     "contents": [
       {
@@ -1497,67 +1497,6 @@
         "connected_by_user_id": 426715,
         "connected_by_username": "Runa ꩜",
         "connected_by_user_slug": "runa"
-      },
-      {
-        "title": "title of work",
-        "updated_at": "2025-03-23T17:52:36.970Z",
-        "created_at": "2025-03-23T17:52:03.810Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "title of work",
-        "content_html": "<p>description of work</p>",
-        "description_html": "<p>year of work</p>",
-        "visibility": "private",
-        "content": "description of work",
-        "description": "year of work\n\n",
-        "source": null,
-        "image": null,
-        "embed": null,
-        "attachment": null,
-        "metadata": null,
-        "id": 35453125,
-        "base_class": "Block",
-        "class": "Text",
-        "user": {
-          "created_at": "2022-10-02T21:58:36.436Z",
-          "slug": "runa",
-          "username": "Runa ꩜",
-          "first_name": "Runa",
-          "last_name": "꩜",
-          "full_name": "Runa ꩜",
-          "avatar": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
-            "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
-          },
-          "channel_count": 282,
-          "following_count": 106,
-          "profile_id": 1784748,
-          "follower_count": 56,
-          "initials": "R꩜",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 426715,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 5,
-        "selected": false,
-        "connection_id": 74524316,
-        "connected_at": "2025-03-23T17:52:03.824Z",
-        "connected_by_user_id": 426715,
-        "connected_by_username": "Runa ꩜",
-        "connected_by_user_slug": "runa"
       }
     ],
     "base_class": "Channel",
@@ -1601,7 +1540,7 @@
     "follower_count": 0,
     "share_link": null,
     "metadata": {
-      "description": ""
+      "description": "Canvas on Wheels is a publication made for Ali Qadeer's Research Methods class."
     },
     "class_name": "Channel",
     "can_index": true,

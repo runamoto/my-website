@@ -1,10 +1,12 @@
 function render_channel(channel) {
   let blocks = channel.contents.map(render_block).join("");
 
+  console.log(channel)
   document.querySelector(".project-container").innerHTML += `
     <div class="channel">
       <div class="metadata-container">
         <h1>${channel.title}</h1>
+        <p>${channel?.metadata?.description}</p>
       </div>
       <div class="image-container">
         ${blocks}
