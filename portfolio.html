@@ -1,153 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-</head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @font-face {
+      font-family: "rom";
+      src: url("./fonts/ABCROMMono-Bold-Trial.otf");
+    }
 
-  @font-face {
-    font-family: "baskervville";
-    src: url("./baskervville.ttf");
-  }
+    @font-face {
+      font-family: "swiss";
+      src: url("./fonts/SuisseIntlLD-Regular.otf");
+    }
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-  * {
-    padding: 0;
-    margin: 0;
-  }
+    h1 {
+      font-size: 1.35rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 0.5em;
+      text-decoration-color: #2222;
+    }
 
-  h1 {
-    font-size: 1.35rem;
-    text-transform: capitalize;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: .5em;
-    text-decoration-color: #2222;
-  }
+    h4 {
+      font-size: 2rem;
+      font-family: "swiss";
+      font-weight: 100;
+      letter-spacing: 0.02em;
+    }
 
-  h4 {
-    font-size: 2rem;
-    font-family: "baskervville";
-    font-weight: 100;
-    letter-spacing: .02em;
-  }
+    p {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      font-weight: 300;
+      line-height: 1.3em;
+    }
 
-  p {
-    font-size: .9rem;
-    margin-top: 1rem;
-    font-weight: 300;
-    line-height: 1.3em;
-  }
+    a {
+      all: unset;
+      cursor: crosshair;
+      text-decoration: underline;
+      margin-top: 0.5rem;
+    }
 
-  a {
-    all: unset;
-    cursor: crosshair;
-    text-decoration: underline;
-    margin-top: .5rem;
-  }
+    a p {
+      font-weight: 300;
+      font-size: 1rem;
+      font-family: "swiss";
+      margin-top: 0.5rem;
+    }
 
+    a p:hover {
+      background-color: black;
+      color: white;
+    }
 
-  a p {
-    font-weight: 300;
-    font-size: 1rem;
-    font-family: "baskervville";
-    margin-top: .5rem;
-  }
+    img,
+    video {
+      max-width: 98%;
+      max-height: 80vh;
+    }
 
-  a p:hover {
-    background-color: black;
-    color: white;
-  }
+    body {
+      background-color: white;
+      font-family: "swiss", sans-serif;
+    }
 
-  img,
-  video {
-    max-width: 98%;
-    max-height: 80vh;
-  }
+    .main {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
 
-  body {
-    background-color: white;
-    font-family: "Roboto", sans-serif;
-  }
+      display: grid;
+      grid-template-columns: 28% 70%;
+      grid-gap: 2%;
+    }
 
-  .main {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    .project-container {
+      overflow-y: scroll;
+    }
 
-    display: grid;
-    grid-template-columns: 28% 70%;
-    grid-gap: 2%;
-  }
+    .links {
+      margin-top: auto;
+      position: absolute;
+      bottom: 2em;
+      left: 2em;
+    }
 
-  .project-container {
-    overflow-y: scroll;
-  }
+    .info {
+      padding: 2em;
+      position: relative;
+      background-color: beige;
+      box-shadow: 0px 0px 8px 3px #bdbdbd1a;
+    }
 
-  .links {
-    margin-top: auto;
-    position: absolute;
-    bottom: 2em;
-    left: 2em;
-  }
+    .channel {
+      padding-top: 2em;
+      width: 100%;
+      display: grid;
+      grid-template-columns: calc(45% - 1em) calc(55% - 1em);
+      grid-gap: 2em;
+    }
 
-  .info {
-    padding: 2em;
-    position: relative;
-  }
+    .metadata-container {
+      max-width: 30em;
+    }
 
-  .channel {
-    padding-top: 2em;
-    width: 100%;
-    display: grid;
-    grid-template-columns: calc(45% - 1em) calc(55% - 1em);
-    grid-gap: 2em;
-  }
+    .image-container {
+    }
 
-  .metadata-container {
-    max-width: 30em;
-  }
+    .block {
+      margin-bottom: 1em;
+    }
+  </style>
 
-  .image-container {}
-
-  .block {
-    margin-bottom: 1em;
-  }
-</style>
-
-<body>
-
-  <div class="main">
-    <div class="info">
-      <h4>Omama Mahmood</h4>
-      <p> Seeds as timekeeping tools is highly impractical and unreliable. All seeds are not equal, they germinate at
-        different speeds based it's interactions with the living and nonliving components affecting it. Meaning relying
-        on it, would make it so that your time is not equal to that of the person next to you. </p>
-      <div class="links">
-        <a href="#">
-          <p>Email</p>
-        </a>
-        <a href="#">
-          <p>Are.na</p>
-        </a>
-        <a href="#">
-          <p>Instagram</p>
-        </a>
-        <a href="#">
-          <p>Mastodon</p>
-        </a>
+  <body>
+    <div class="main">
+      <div class="info">
+        <h4>Omama Mahmood</h4>
+        <p>
+          Omama is a graphic designer based in Tkaronto attending their final
+          year at OCAD university. Interested in a multitude of discipline’s
+          intersection with graphic design, they have recently been engulfed in
+          the praxis of collaborative making, experimental filmmaking and
+          ecological systems thinking.
+        </p>
+        <div class="links">
+          <a href="mailto:omama.runa@gmail.com">
+            <p>Email</p>
+          </a>
+          <a href="https://www.are.na/runa/index">
+            <p>Are.na</p>
+          </a>
+          <a href="https://www.instagram.com/runzarchive/">
+            <p>Instagram</p>
+          </a>
+          <a href="https://mastodon.social/@runamoto">
+            <p>Mastodon</p>
+          </a>
+        </div>
       </div>
+
+      <div class="project-container"></div>
     </div>
 
-    <div class="project-container"></div>
-  </div>
-
-  <script src="./portfolio.js" type="module"></script>
-</body>
-
+    <script src="./portfolio.js" type="module"></script>
+  </body>
 </html>
