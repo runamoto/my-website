@@ -66,6 +66,10 @@ p {
   font-size: 20px;
 }
 
+img:active {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
 /* ---------------header section!!------------*/
 #header {
   width: 100%;
