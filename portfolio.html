@@ -1,158 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  </head>
 
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
 
-    @font-face {
-      font-family: "rom";
-      src: url("./fonts/ABCROMMono-Bold-Trial.otf");
-    }
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-    @font-face {
-      font-family: "swiss";
-      src: url("./fonts/SuisseIntlLD-Regular.otf");
-    }
-    * {
-      padding: 0;
-      margin: 0;
-    }
+  @font-face {
+    font-family: "rom";
+    src: url("./fonts/ABCROMMono-Bold-Trial.otf");
+  }
 
-    h1 {
-      font-size: 1.35rem;
-      text-transform: capitalize;
-      font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 0.5em;
-      text-decoration-color: #2222;
-    }
+  @font-face {
+    font-family: "swiss";
+    src: url("./fonts/SuisseIntlLD-Regular.otf");
+  }
 
-    h4 {
-      font-size: 2rem;
-      font-family: "swiss";
-      font-weight: 100;
-      letter-spacing: 0.02em;
-    }
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-    p {
-      font-size: 0.9rem;
-      margin-top: 1rem;
-      font-weight: 300;
-      line-height: 1.3em;
-    }
+  h1 {
+    font-size: 1.35rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    text-decoration-color: #2222;
+  }
 
-    a {
-      all: unset;
-      cursor: crosshair;
-      text-decoration: underline;
-      margin-top: 0.5rem;
-    }
+  h4 {
+    font-size: 2rem;
+    font-family: "swiss";
+    font-weight: 100;
+    letter-spacing: 0.02em;
+  }
 
-    a p {
-      font-weight: 300;
-      font-size: 1rem;
-      font-family: "swiss";
-      margin-top: 0.5rem;
-    }
+  p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 1.3em;
+  }
 
-    a p:hover {
-      background-color: black;
-      color: white;
-    }
+  a {
+    all: unset;
+    cursor: crosshair;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+  }
 
-    img,
-    video {
-      max-width: 98%;
-      max-height: 80vh;
-    }
+  a p {
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "swiss";
+    margin-top: 0.5rem;
+  }
 
-    body {
-      background-color: white;
-      font-family: "swiss", sans-serif;
-    }
+  a p:hover {
+    background-color: black;
+    color: white;
+  }
 
-    .main {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+  img,
+  video {
+    max-width: 98%;
+    max-height: 80vh;
+  }
 
-      display: grid;
-      grid-template-columns: 28% 70%;
-      grid-gap: 2%;
-    }
+  body {
+    background-color: white;
+    font-family: "swiss", sans-serif;
+  }
 
-    .project-container {
-      overflow-y: scroll;
-    }
+  .main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
-    .links {
-      margin-top: auto;
-      position: absolute;
-      bottom: 2em;
-      left: 2em;
-    }
+    display: grid;
+    grid-template-columns: 28% 70%;
+    grid-gap: 2%;
+  }
 
-    .info {
-      padding: 2em;
-      position: relative;
-      background-color: beige;
-      box-shadow: 0px 0px 8px 3px #bdbdbd1a;
-    }
+  .project-container {
+    overflow-y: scroll;
+  }
 
-    .channel {
-      padding-top: 2em;
-      width: 100%;
-      display: grid;
-      grid-template-columns: calc(45% - 1em) calc(55% - 1em);
-      grid-gap: 2em;
-    }
+  .links {
+    margin-top: auto;
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+  }
 
-    .metadata-container {
-      max-width: 30em;
-    }
+  .info {
+    padding: 2em;
+    position: relative;
+    background-color: beige;
+    box-shadow: 0px 0px 8px 3px #bdbdbd1a;
+  }
 
-    .block {
-      margin-bottom: 1em;
-    }
-  </style>
+  .channel {
+    padding-top: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(45% - 1em) calc(55% - 1em);
+    grid-gap: 2em;
+  }
 
-  <body>
-    <div class="main">
-      <div class="info">
-        <h4>Omama Mahmood</h4>
-        <p>
-          Omama is a graphic designer based in Tkaronto attending their final
-          year at OCAD university. Interested in a multitude of discipline’s
-          intersection with graphic design, they have recently been engulfed in
-          the praxis of collaborative making, experimental filmmaking and
-          ecological systems thinking.
-        </p>
-        <div class="links">
-          <a href="mailto:omama.runa@gmail.com">
-            <p>Email</p>
-          </a>
-          <a href="https://www.are.na/runa/index">
-            <p>Are.na</p>
-          </a>
-          <a href="https://www.instagram.com/runzarchive/">
-            <p>Instagram</p>
-          </a>
-          <a href="https://mastodon.social/@runamoto">
-            <p>Mastodon</p>
-          </a>
-        </div>
+  .metadata-container {
+    max-width: 30em;
+  }
+
+  .block {
+    margin-bottom: 1em;
+  }
+
+  .fullsize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222e;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .fullsize img,
+  .fullsize video {
+    max-width: 98%;
+    max-height: 90vh;
+  }
+</style>
+
+<body>
+  <div class="main">
+    <div class="info">
+      <h4>Omama Mahmood</h4>
+      <p>
+        Omama is a graphic designer based in Tkaronto attending their final
+        year at OCAD university. Interested in a multitude of discipline’s
+        intersection with graphic design, they have recently been engulfed in
+        the praxis of collaborative making, experimental filmmaking and
+        ecological systems thinking.
+      </p>
+      <div class="links">
+        <a href="mailto:omama.runa@gmail.com">
+          <p>Email</p>
+        </a>
+        <a href="https://www.are.na/runa/index">
+          <p>Are.na</p>
+        </a>
+        <a href="https://www.instagram.com/runzarchive/">
+          <p>Instagram</p>
+        </a>
+        <a href="https://mastodon.social/@runamoto">
+          <p>Mastodon</p>
+        </a>
       </div>
-
-      <div class="project-container"></div>
     </div>
 
-    <script src="./portfolio.js" type="module"></script>
-  </body>
+    <div class="project-container"></div>
+  </div>
+
+  <script src="./portfolio.js" type="module"></script>
+</body>
+
 </html>

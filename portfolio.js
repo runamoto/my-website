@@ -10,11 +10,10 @@ function render_channel(channel) {
     <div class="channel">
       <div class="metadata-container">
         <h1>${channel.title}</h1>
-        <p>${
-          channel?.contents.find(function (block) {
-            if (block.title == "description") return true;
-          })?.content_html
-        }</p>
+        <p>${channel?.contents.find(function(block) {
+    if (block.title == "description") return true;
+  })?.content_html
+    }</p>
       </div>
       <div class="image-container">
         ${blocks}
@@ -30,11 +29,14 @@ function render_block(block) {
 }
 
 function image(block) {
+  // onclick...
+
   return `
-    <div class="block">
+    <div class="block fullsizeable">
       <img src= ${block.image?.display.url}></img>
     </div>`;
 }
+
 
 function mp4(block) {
   return `
@@ -46,4 +48,13 @@ function mp4(block) {
 let init = (channels) => channels.forEach(render_channel);
 fetch("./data.json")
   .then((res) => res.json())
-  .then(init);
+  .then(init)
+  .then(() => {
+    document.querySelectorAll(".fullsizeable").forEach((e) => {
+      e.onclick = (btn) => {
+        e.classList.toggle("fullsize")
+      }
+    })
+  })
+
+
