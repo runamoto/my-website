@@ -29,8 +29,6 @@ function render_block(block) {
 }
 
 function image(block) {
-  // onclick...
-
   return `
     <div class="block fullsizeable">
       <img src= ${block.image?.display.url}></img>
@@ -46,15 +44,17 @@ function mp4(block) {
 }
 
 let init = (channels) => channels.forEach(render_channel);
+let mountonclick = () => {
+  document.querySelectorAll(".fullsizeable").forEach((e) => {
+    e.onclick = (btn) => {
+      e.classList.toggle("fullsize")
+    }
+  })
+}
+
 fetch("./data.json")
   .then((res) => res.json())
   .then(init)
-  .then(() => {
-    document.querySelectorAll(".fullsizeable").forEach((e) => {
-      e.onclick = (btn) => {
-        e.classList.toggle("fullsize")
-      }
-    })
-  })
+  .then(mountonclick)
 
 
