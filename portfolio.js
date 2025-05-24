@@ -3,7 +3,7 @@ function setup() {
   canvas.parent("p5");
 }
 
-let blocks = []
+let blocks = [];
 
 function render_channel(channel) {
   let blocks = channel.contents.map(render_block).join("");
@@ -12,11 +12,12 @@ function render_channel(channel) {
   document.querySelector(".project-container").innerHTML += `
     <div class="channel">
       <div class="metadata-container">
-        <h1>${channel.title}</h1>
-        <p>${channel?.contents.find(function(block) {
-    if (block.title == "description") return true;
-  })?.content_html
-    }</p>
+        <h1> ${channel.title}</h1>
+        <p>${
+          channel?.contents.find(function (block) {
+            if (block.title == "description") return true;
+          })?.content_html
+        }</p>
       </div>
       <div class="image-container">
         ${blocks}
@@ -26,7 +27,7 @@ function render_channel(channel) {
 }
 
 function render_block(block) {
-  blocks.push(block)
+  blocks.push(block);
   if (block.class == "Image") return image(block);
   if (block.class == "Attachment" && block.attachment.extension == "mp4")
     return mp4(block);
@@ -38,7 +39,6 @@ function image(block) {
       <img src= ${block.image?.display.url}></img>
     </div>`;
 }
-
 
 function mp4(block) {
   return `
@@ -52,23 +52,23 @@ let mountonclick = () => {
   document.querySelectorAll(".fullsizeable").forEach((e) => {
     e.onclick = (btn) => {
       // make block if fullsizeable
-      let fullsize = document.createElement("div")
-      fullsize.classList.add("fullsize")
-      let image = document.createElement("img")
-      image.src = blocks.find(b => b.id == e.getAttribute("block-id")).image?.original.url
+      let fullsize = document.createElement("div");
+      fullsize.classList.add("fullsize");
+      let image = document.createElement("img");
+      image.src = blocks.find(
+        (b) => b.id == e.getAttribute("block-id")
+      ).image?.original.url;
 
-      fullsize.appendChild(image)
-      fullsize.onclick = () => fullsize.remove()
-      document.body.appendChild(fullsize)
+      fullsize.appendChild(image);
+      fullsize.onclick = () => fullsize.remove();
+      document.body.appendChild(fullsize);
 
       //e.classList.toggle("fullsize")
-    }
-  })
-}
+    };
+  });
+};
 
 fetch("./data.json")
   .then((res) => res.json())
   .then(init)
-  .then(mountonclick)
-
-
+  .then(mountonclick);

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+  </head>
+  <style>
+    * {
+      padding: 0.1vw;
+      margin: 0.1vw;
+    }
+    @font-face {
+      font-family: "mono";
+      src: url("./fonts/SpaceMono-Regular.ttf");
+    }
+
+    body {
+      background-color: rgb(15, 15, 15);
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-family: "mono";
+      text-transform: uppercase;
+      font-size: 10vw;
+      color: antiquewhite;
+    }
+    .block {
+      font-size: 20px;
+      font-family: "mono";
+    }
+
+    a {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      font-family: "mono";
+      display: flex;
+      justify-content: right;
+      color: antiquewhite;
+    }
+
+    img {
+      max-width: 70%;
+      max-height: 20vh;
+    }
+
+    /* container */
+    .darkroom {
+      position: relative;
+      display: flex;
+      justify-content: right;
+
+      flex-wrap: wrap;
+      background-color: rgb(15, 15, 15);
+      margin: 0;
+      padding: 0;
+    }
+
+    .pixel-images img {
+      max-width: 30%;
+      max-height: 30vh;
+    }
+
+    /*aaryans code*/
+
+    .fullsizeable {
+      cursor: pointer;
+      transition: all 200ms;
+    }
+
+    .fullsizeable:hover {
+      transform: scale(1.02);
+      /* transform: scale(1.02); */
+    }
+
+    .fullsize {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222e;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .fullsize img,
+    .fullsize video {
+      max-width: 98%;
+      max-height: 90vh;
+    }
+    /*aaryans code*/
+
+    /* src https://codepen.io/wtaylor45/pen/pXGbeY */
+
+    span {
+      background-image: linear-gradient(#5d7619, #5d7619);
+      background-repeat: no-repeat;
+      background-position: 0% 80%;
+      background-size: 100% 4px;
+      transition: background-size 0.5s, background-position 0.3s ease-in 0.5s;
+    }
+
+    span:hover {
+      background-size: 100% 70%;
+      background-position: 0% 40%;
+      transition: background-position 0.5s, background-size 0.3s ease-in 0.5s;
+    }
+    /* src https://codepen.io/wtaylor45/pen/pXGbeY */
+    p {
+      color: antiquewhite;
+      font-size: 10px;
+    }
+  </style>
+  <body>
+    <div class="Link"></div>
+    <div class="else"></div>
+    <div class="darkroom"></div>
+    <div class="pixel-images"></div>
+  </body>
+  <script src="./gallery.js" type="module"></script>
+</html>

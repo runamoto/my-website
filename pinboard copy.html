@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pinboard</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <style>
+    body {
+      background-image: url("images/repeat.jpg");
+      background-repeat: repeat;
+      background-size: 80% 300%;
+      font-family: "runa", sans-serif;
+      padding: 20px;
+      background: #e0e0e0;
+    }
+
+    /* ----------------font--------------- */
+
+    @font-face {
+      font-family: "runa";
+      src: url("./fonts/runatype.ttf");
+    }
+
+    a:hover {
+      color: #bf86be;
+      text-decoration: underline;
+    }
+
+    li {
+      color: #68b084;
+      -webkit-text-stroke: 0.25px #68b084;
+      text-shadow: #dc789a 1px 0 10px;
+      font-size: 15px;
+    }
+
+    h1 {
+      color: #18334d;
+      -webkit-text-stroke: 0.75px #18334d;
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #18334d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .image {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+    }
+
+    .leftcolumn {
+      float: left;
+      width: 30%;
+    }
+
+    .card {
+      margin-top: 20px;
+      background-color: #f1c7dd;
+      padding: 20px;
+      display: grid;
+
+      -webkit-box-shadow: 0px 0px 118px 83px #f2b6d5;
+      -moz-box-shadow: 0px 0px 118px 83px #f2b6d5;
+      box-shadow: 0px 0px 118px 83px #f2b6d5;
+    }
+
+    .card2 {
+      margin-top: 20px;
+      background-color: #dbf1c7;
+      padding: 20px;
+
+      -webkit-box-shadow: 0px 0px 118px 83px #f2b6d5;
+      -moz-box-shadow: 0px 0px 118px 83px #f2b6d5;
+      box-shadow: 0px 0px 118px 83px #f2b6d5;
+    }
+
+    .row:after {
+      display: grid;
+      content: "";
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .scrollGradient {
+      background: linear-gradient(#feffff 33%, rgba(254, 255, 255, 0)),
+        linear-gradient(rgba(254, 255, 255, 0), #feffff 66%) 0 100%,
+        radial-gradient(
+          farthest-side at 50% 0,
+          rgba(255, 64, 255, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        radial-gradient(
+            farthest-side at 50% 100%,
+            rgba(255, 64, 255, 0.5),
+            rgba(0, 0, 0, 0)
+          )
+          0 100%;
+      background-color: #feffff;
+      background-repeat: no-repeat;
+      background-attachment: local, local, scroll, scroll;
+      background-size: 100% 150px, 100% 150px, 100% 50px, 100% 50px;
+    }
+  </style>
+
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="back">
+          <img src="images/back.gif" alt="back" />
+          <p><a href="https://omama.garden">Home</a></p>
+        </div>
+        <!-- WRITING STARTS HERE -->
+        <div class="card2">
+          <h2>May 14, 2025</h2>
+
+          <h2>Officially an Alumni</h2>
+
+          <p>
+            its been a while since I've updated this log, so long infact, that
+            my status as a material person in this country has changed from that
+            of a student to now an unemployed alumni...I'm parting ways with a
+            part of myself that I somehow thought would never leave me. Leaving
+            behind a community of students who were within an institution they
+            could demand more from and demand better from.
+          </p>
+
+          <p>
+            Now, I have to deal head first with the monopolies, paid
+            subscriptions and the capitalist war machines that my 9 to 5 tax
+            dollars are funding. The silver lining? I don't have to figure it
+            out all by myself. If theres one thing I've cultivated during my
+            time at OCAD is relationships that will last. Relationships with
+            students, custodians and professors who what nothing but "success"
+            for me—whatever that may look like to them.
+          </p>
+          <p>
+            So what have I really lost? Access to resources maybe...But I'm not
+            missing much else. My community is still very much there, now,
+            without a conflict of interest XD. It's time to start adulting ig.
+          </p>
+        </div>
+        <div class="card2">
+          <h2>Mar 19, 2025</h2>
+
+          <h2>Seeds as Timekeepers</h2>
+
+          <p>
+            Seeds as timekeeping tools is highly impractical and unreliable. All
+            seeds are not equal, they germinate at different speeds based it's
+            interactions with the living and nonliving components affecting it.
+            Meaning relying on it, would make it so that your time is not equal
+            to that of the person next to you.
+          </p>
+
+          <p>
+            Unlike the empiricality of the gregorian calendar, seeds as
+            timekeepers present time "in a situated context". They force us to
+            stop and observe the minuscule changes, to sit, observe, and pay
+            attention to instead of plan, hurry and worry. All the while, a
+            reciprocal relationship forms. This is not mere paternalistic
+            stewardship. Time becomes rooted in empathy towards a life, care and
+            responsibility in the sead of maximum productivity.
+          </p>
+          <p>
+            Seeds as timekeepers has potential to diminish extractive thinking
+            into speculative thinking—a commitment to seek what other worlds and
+            moments could be in the making of. You don't rely on the seed for
+            it's beauty or it's harvest, rather, you become a witness to it's
+            process of growth, stagnation, death and potentially, regeneration.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Mar 19, 2025</h2>
+
+          <p>Weekly Check-in</p>
+
+          <p>
+            I keep forgetting to update this because my head is so full of
+            stuff. So I'm going to make this a weelky check in thing, not just
+            for documentation purposes, but also to practice VIM and for my
+            future self.
+          </p>
+
+          <p>
+            Selma and I are hosting a workshop this week. It centeres around
+            discussion and dialouge so there isn't much for us to do other than
+            to propagate ideas and get people talking to eachother about things
+            that they deem important in the context of the burning world and
+            living in one of the most industrialized places in the world.
+            Thinking about how to sever hierarchy in these kinds of situations,
+            the goal is not to go up and present, but rather, be apart of the
+            conversation. We can only do that when we know nobody thinks of us
+            as a "speatheadder" of the workshop and we don't impost that onto
+            ourselves as we converse. An idea was to have an omnipotent narrator
+            voice over the whole thing. That way, Not only Selma and I get to be
+            part of the workshop (mentally) completely, but there will also be a
+            factor of uncontrollability, taking away the need for control and
+            directionality on our parts.
+          </p>
+          <img
+            src="./pinboard-images/workshop-poster.png"
+            class="image"
+            width="500"
+          />
+        </div>
+
+        <div class="card">
+          <h1></h1>
+          <h2>Feb 27 1:44am</h2>
+          <p>
+            Morning everyone!! It's been a while. I recently got my Holga film
+            developed! The
+            <a
+              href="https://web.archive.org/web/20070118212754/http://shop.lomography.com/holga/history/"
+              >Holga</a
+            >
+            is really interesting because it's actually a plastic "toy camera",
+            introduced in Hong Kong to bring photography to the working class
+            during a technological boom and trend in photography as a hobby.
+            <br /><br />The camera was introduced to me by Roderick Grant for
+            the reason that it was an affordable, beginner friendly camera that
+            who's beauty is in it's constraints. I picked one up for my birthday
+            from a guy on facebook marketplace and took it to Dubai where I took
+            most of the pictures and they came out better than I could have
+            imagined
+          </p>
+          <img src="./pinboard-images/holga1.jpg" class="image" width="500" />
+          <img src="./pinboard-images/holga2.jpg" class="image" width="500" />
+          <img src="./pinboard-images/holga3.jpg" class="image" width="500" />
+          <p>
+            BTW!! I've gotten better at using VIM, I made a little cheat sheet
+            on my sticky note app and made it so it's on top of vs code so
+            that's been suuper helpful.
+          </p>
+        </div>
+
+        <div class="card">
+          <h1></h1>
+          <h2>Feb 13, 2025</h2>
+          <p>
+            <img
+              src="./pinboard-images/IMG_5685.JPG"
+              class="image"
+              width="500"
+              alt="back"
+            />
+            I made a type specimen for my typeface and printed it out on pink
+            paper!! I love working with colored paper,, can never go back to
+            white tbh.
+          </p>
+        </div>
+
+        <div class="card">
+          <h1></h1>
+          <h2>Feb 12, 2025</h2>
+          <p>
+            I'm currently typing this using VIM which is kinda difficult becuse
+            I'm not allowing myself to use any of the arrow keys or my trackpad
+            whilst typing in my html file. Its hard to get used to but I'm
+            already betting better compared to two days ago. I type better when
+            im not thinking too hard about it becuas my fingers are already used
+            to it. Our body is so phenomenal in thay way...So much memory, so
+            much capacity, so much love!!!
+          </p>
+        </div>
+        <div class="card">
+          <h1></h1>
+          <h2>Feb 11, 2025</h2>
+          <p>
+            How does one make written notes "real" is the question Ive been
+            pondering. I have a plethora of information, theory and research
+            I've collected from my independant study last year but I am
+            struggling to find a medium that makes clear the effort. The visual
+            language is a mirror. —11.02.25
+          </p>
+        </div>
+
+        <div class="card">
+          <h1></h1>
+          <h2>Feb 8, 2025</h2>
+          <p>
+            Yooo look who finally got a domain name!! I'm still unsure about it,
+            but it was the cheapest from my top three options. The other ones
+            were omama.run, omama.place... I still keep typing and telling
+            people its omama.cafe r.i.p.
+          </p>
+          <p>
+            I'm also working on thesis a lot these days, gotta sit down this
+            week and work on ISP (wtf i sound like anisha)
+          </p>
+          <p>
+            My thesis has been going really well tho, This week I've been
+            working with Zaid and Saad. With Zaid we're making a soundscape for
+            his screenplay. I recently read some of Naomi Waltan-smith the
+            author of Turning Ears; Or, Ec(h)otechnics this sentence from one of
+            per papers resonated with me:
+          </p>
+          <h2>
+            "Human ears evolved for frontal communication with other humans and
+            away from lupine conical ears that picked up the environment. Humans
+            have to decide which sounds we turn toward and how to deal with them
+            by physically pivoting."
+          </h2>
+          <p>
+            Zaid and I decided not to use any samples in our soundscape, chosing
+            instead to create the sounds using miscellaneous objects such as
+            glass vases, rolls of tape, water and our own vocals. Zaid remarked
+            that the sounds we were producing using these objects gave him vivid
+            mental imagery abou what he wanted to add to his screenplay. So
+            instead of trying to emulate the audio usingthe screenplay, we
+            decided to work the other way around and use the sounds as an
+            inspiration for what is to come as our "artifact".
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Jan 15, 2025</h2>
+          <h1>Aaryans new blog</h1>
+          <p>
+            Aaryan recently started a feed of his own [so fun] I love this
+            concept of articulation through documentation. I think we should all
+            do it. Check out his feed
+            <a href="https://feed.a-p.space/"> here </a>—15.01.25
+          </p>
+          <div><img src="images/aaryan.png" class="image" width="500"</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h1></h1>
+        <h2>Jan 15, 2025</h2>
+        <p>
+          Finally got time to work on updating the site, thinking about what
+          kind of things to add to it —15.01.25
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Dec 19, 2024</h2>
+
+        <p>
+          This site was possible thanks to the wonderful sadgrl.online ♥ you
+          pookie! —19.12.24
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Dec 19, 2024</h2>
+
+        <p>
+          This site was possible thanks to the wonderful sadgrl.online ♥ you
+          pookie! —19.12.24
+        </p>
+      </div>
+
+      <div class="card">
+        <h1></h1>
+        <h2>Jan 15, 2025</h2>
+        <p>
+          Finally got time to work on updating the site, thinking about what
+          kind of things to add to it —15.01.25
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
