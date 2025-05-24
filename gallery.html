@@ -14,14 +14,28 @@
       font-family: "mono";
       src: url("./fonts/SpaceMono-Regular.ttf");
     }
+    @font-face {
+      font-family: "cond";
+      src: url("./fonts/AvenirNextCondensed-Regular-08.ttf");
+    }
 
     body {
       background-color: rgb(15, 15, 15);
     }
+    .box-shadow {
+      pointer-events: none;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      box-shadow: -15px -0px 20px -1px rgba(0, 0, 0, 0.227) inset;
+      position: fixed;
+      z-index: 9;
+    }
     h1 {
       margin: 0;
       padding: 0;
-      font-family: "mono";
+      font-family: "cond";
       text-transform: uppercase;
       font-size: 10vw;
       color: antiquewhite;
@@ -48,19 +62,28 @@
 
     /* container */
     .darkroom {
+      overflow-x: scroll;
       position: relative;
       display: flex;
-      justify-content: right;
+      justify-content: left;
 
       flex-wrap: wrap;
-      background-color: rgb(15, 15, 15);
+      background-color: rgb(26, 28, 26);
       margin: 0;
       padding: 0;
+      min-width: 295vmax;
     }
 
-    .pixel-images img {
-      max-width: 30%;
-      max-height: 30vh;
+    .pixel-images {
+      overflow-x: scroll;
+      position: relative;
+      display: flex;
+
+      flex-wrap: wrap;
+      background-color: #5d7619;
+      margin-top: 1em;
+      min-width: 295vmax;
+      margin-left: 22em;
     }
 
     /*aaryans code*/
@@ -115,12 +138,27 @@
       color: antiquewhite;
       font-size: 10px;
     }
+    .horizontal-scroll {
+      width: 100vw;
+      height: auto;
+      overflow-x: scroll;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .horizontal-scroll:-webkit-scrollbar {
+      display: none;
+    }
   </style>
   <body>
     <div class="Link"></div>
     <div class="else"></div>
-    <div class="darkroom"></div>
-    <div class="pixel-images"></div>
+    <div class="horizontal-scroll">
+      <div class="darkroom"></div>
+    </div>
+    <div class="horizontal-scroll">
+      <div class="pixel-images"></div>
+    </div>
+    <div class="box-shadow"></div>
   </body>
   <script src="./gallery.js" type="module"></script>
 </html>
