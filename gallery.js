@@ -12,6 +12,7 @@ api
     let h = "";
     let darkroom_images = "";
     let pixel_images = "";
+    let Victoria = "";
     h += `
         <div class= 'text block'>
         <h1> <span data-scroll id="highlight">${channel.title} </span> </h1>
@@ -60,6 +61,12 @@ api
           <p>${block.title}</p>
           <img src = ${block.image.thumb.url}>  </img>
           </div>`;
+        } else if (block.description.trim() == "Victoria") {
+          pixel_images += `
+          <div class="block image fullsizeable" block-id="${block.id}">
+          <p>${block.title}</p>
+          <img src = ${block.image.thumb.url}>  </img>
+          </div>`;
         } else {
           h += `
           <div class="block image fullsizeable" block-id="${block.id}">
@@ -102,6 +109,7 @@ api
 
     document.querySelector(".darkroom").innerHTML = darkroom_images;
     document.querySelector(".pixel-images").innerHTML = pixel_images;
+    document.querySelector(".pixel-images").innerHTML = Victoria;
     document.querySelector(".else ").innerHTML = h;
 
     let mountonclick = () => {
