@@ -62,7 +62,7 @@ api
           <img src = ${block.image.thumb.url}>  </img>
           </div>`;
         } else if (block.description.trim() == "Victoria") {
-          pixel_images += `
+          Victoria += `
           <div class="block image fullsizeable" block-id="${block.id}">
           <p>${block.title}</p>
           <img src = ${block.image.thumb.url}>  </img>
@@ -109,7 +109,7 @@ api
 
     document.querySelector(".darkroom").innerHTML = darkroom_images;
     document.querySelector(".pixel-images").innerHTML = pixel_images;
-    document.querySelector(".pixel-images").innerHTML = Victoria;
+    document.querySelector(".victoria").innerHTML = Victoria;
     document.querySelector(".else ").innerHTML = h;
 
     let mountonclick = () => {
