@@ -4,17 +4,15 @@ import { Arena } from "./arena.js";
 
 const api = Arena({ auth });
 
-api
-  .channel("image-lab")
-  .get()
+fetch('./data.json')
+	.then((response) => response.json())
   .then(function (channel) {
     let blocks = [];
     let h = "";
     let darkroom_images = "";
     let pixel_images = "";
     let Victoria = "";
-    h += `
-        <div class= 'text block'>
+    h += `<div class= 'text block'>
         <h1> <span data-scroll id="highlight">${channel.title} </span> </h1>
         </div>`;
 
