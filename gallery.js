@@ -1,4 +1,4 @@
-fetch("./data.json")
+fetch("./gallerydata.json")
   .then((response) => response.json())
   .then(function (channel) {
     let blocks = [];
