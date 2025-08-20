@@ -1,11 +1,5 @@
-// @ts-ignore
-import { auth } from "./auth.js";
-import { Arena } from "./arena.js";
-
-const api = Arena({ auth });
-
-fetch('./data.json')
-	.then((response) => response.json())
+fetch("./data.json")
+  .then((response) => response.json())
   .then(function (channel) {
     let blocks = [];
     let h = "";
