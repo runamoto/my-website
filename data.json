@@ -2323,14 +2323,14 @@
     "id": 4104622,
     "title": "compost calendar",
     "created_at": "2025-08-20T21:48:18.380Z",
-    "updated_at": "2025-08-22T20:20:46.664Z",
-    "added_to_at": "2025-08-22T19:18:59.124Z",
+    "updated_at": "2025-08-22T20:35:27.931Z",
+    "added_to_at": "2025-08-22T20:34:49.274Z",
     "published": false,
     "open": false,
     "collaboration": false,
     "collaborator_count": 0,
     "slug": "compost-calendar",
-    "length": 3,
+    "length": 4,
     "kind": "default",
     "status": "private",
     "user_id": 426715,
@@ -2339,10 +2339,10 @@
       "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
       "bucket": "https://s3.amazonaws.com/arena_images-temp/",
       "success_action_status": "201",
-      "policy": "eydleHBpcmF0aW9uJzogJzIwMjUtMDgtMjlUMjA6MjI6MDIuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
+      "policy": "eydleHBpcmF0aW9uJzogJzIwMjUtMDgtMjlUMjA6MzU6NDEuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
       "acl": "public-read",
-      "signature": "vu5NSIac0TYGZT37DiI5W4h7rtQ=",
-      "expires": "2025-08-29T20:22:02.000Z"
+      "signature": "xJ4mrzttzjCqOdL9+lMZqczVhBY=",
+      "expires": "2025-08-29T20:35:41.000Z"
     },
     "contents": [
       {
@@ -2515,15 +2515,15 @@
       },
       {
         "title": "description",
-        "updated_at": "2025-08-22T19:19:05.699Z",
+        "updated_at": "2025-08-22T20:32:22.169Z",
         "created_at": "2025-08-22T19:18:59.096Z",
         "state": "available",
         "comment_count": 0,
         "generated_title": "description",
-        "content_html": "<p>\"rip it up and feed it to the compost\".</p>\n\n<p>The art of composting something after it's subsequent death. A ritualistic practice of nutrient cycling, during a full moon. To return to soil and become the earth once more. The \"end of a year\" often marks the \"beginning\" of another, but we are constantly surrounded by the uroboros. </p>\n\n<p>I am reminding you that \"The dance of renewal, the dance that made world, was always danced here at the edge of things, on the brink, on the foggy coast.”</p>",
+        "content_html": "<p>\"rip it up and feed it to the compost\".</p>\n\n<p>The art of composting something after it's subsequent death. A ritualistic practice of nutrient cycling, during a full moon. To return to soil and become the earth once more. A calendar as a constant reminder of eventual mortality, we are constantly surrounded by the uroboros. </p>\n\n<p>Reminding you that \"The dance of renewal, the dance that made world, was always danced here at the edge of things, on the brink, on the foggy coast.”</p>\n\n<p>Remember?</p>",
         "description_html": "",
         "visibility": "private",
-        "content": "\"rip it up and feed it to the compost\".\n\nThe art of composting something after it's subsequent death. A ritualistic practice of nutrient cycling, during a full moon. To return to soil and become the earth once more. The \"end of a year\" often marks the \"beginning\" of another, but we are constantly surrounded by the uroboros. \n\nI am reminding you that \"The dance of renewal, the dance that made world, was always danced here at the edge of things, on the brink, on the foggy coast.”\n\n",
+        "content": "\"rip it up and feed it to the compost\".\n\nThe art of composting something after it's subsequent death. A ritualistic practice of nutrient cycling, during a full moon. To return to soil and become the earth once more. A calendar as a constant reminder of eventual mortality, we are constantly surrounded by the uroboros. \n\nReminding you that \"The dance of renewal, the dance that made world, was always danced here at the edge of things, on the brink, on the foggy coast.”\n\nRemember?",
         "description": "",
         "source": null,
         "image": null,
@@ -2570,6 +2570,90 @@
         "selected": false,
         "connection_id": 82197212,
         "connected_at": "2025-08-22T19:18:59.105Z",
+        "connected_by_user_id": 426715,
+        "connected_by_username": "Runa ꩜",
+        "connected_by_user_slug": "runa"
+      },
+      {
+        "title": "2025-03-31_15.49.56_result.jpg",
+        "updated_at": "2025-08-22T20:35:01.907Z",
+        "created_at": "2025-08-22T20:34:45.757Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "2025-03-31_15.49.56_result.jpg",
+        "content_html": "",
+        "description_html": "",
+        "visibility": "private",
+        "content": "",
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "7240979b8e66fe2b45ef5a2bc35d23c4.jpg",
+          "content_type": "image/jpeg",
+          "updated_at": "2025-08-22T20:34:47.103Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIzODk2NzY3MC9vcmlnaW5hbF83MjQwOTc5YjhlNjZmZTJiNDVlZjVhMmJjMzVkMjNjNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIzODk2NzY3MC9vcmlnaW5hbF83MjQwOTc5YjhlNjZmZTJiNDVlZjVhMmJjMzVkMjNjNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIzODk2NzY3MC9vcmlnaW5hbF83MjQwOTc5YjhlNjZmZTJiNDVlZjVhMmJjMzVkMjNjNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIzODk2NzY3MC9vcmlnaW5hbF83MjQwOTc5YjhlNjZmZTJiNDVlZjVhMmJjMzVkMjNjNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/38967670/original_7240979b8e66fe2b45ef5a2bc35d23c4.jpg?1755894887?bc=0",
+            "file_size": 9845521,
+            "file_size_display": "9.39 MB"
+          }
+        },
+        "embed": null,
+        "attachment": null,
+        "metadata": {
+          "automated_nsfw": "false"
+        },
+        "id": 38967670,
+        "base_class": "Block",
+        "class": "Image",
+        "user": {
+          "created_at": "2022-10-02T21:58:36.436Z",
+          "slug": "runa",
+          "username": "Runa ꩜",
+          "first_name": "Runa",
+          "last_name": "꩜",
+          "full_name": "Runa ꩜",
+          "avatar": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+            "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
+          },
+          "channel_count": 294,
+          "following_count": 122,
+          "profile_id": 1784748,
+          "follower_count": 65,
+          "initials": "R꩜",
+          "can_index": false,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 426715,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 4,
+        "selected": false,
+        "connection_id": 82200179,
+        "connected_at": "2025-08-22T20:34:45.765Z",
         "connected_by_user_id": 426715,
         "connected_by_username": "Runa ꩜",
         "connected_by_user_slug": "runa"
