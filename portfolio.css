@@ -1,0 +1,185 @@
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+    @font-face {
+      font-family: "rom";
+      src: url("./fonts/ABCROMMono-Bold-Trial.otf");
+    }
+
+    @font-face {
+      font-family: "swiss";
+      src: url("./fonts/SuisseIntlLD-Regular.otf");
+    }
+
+    @font-face {
+      font-family: "AT";
+      src: url("./fonts/AmericanTypewriter.otf");
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 1.35rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 0.5em;
+      text-decoration-color: #2222;
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-family: "swiss";
+      font-weight: 100;
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      font-weight: 300;
+      line-height: 1.3em;
+    }
+
+    a {
+      all: unset;
+      cursor: crosshair;
+      text-decoration: underline;
+      margin-top: 0.5rem;
+    }
+
+    a p {
+      font-weight: 300;
+      font-size: 1rem;
+      font-family: "swiss";
+      margin-top: 0.5rem;
+    }
+
+    a p:hover {
+      background-color: black;
+      color: white;
+    }
+
+    img,
+    video {
+      max-width: 98%;
+      max-height: 80vh;
+    }
+
+    body {
+      background-color: white;
+      font-family: "swiss", sans-serif;
+    }
+
+    .main {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: 28% 70%;
+      grid-gap: 2%;
+
+      background-color: #f6eff1;
+    }
+
+
+    .project-container {
+      overflow-y: scroll;
+    }
+
+    .links {
+      position: absolute;
+      bottom: 2em;
+      left: 2em;
+    }
+
+    .info {
+      padding: 2em;
+      position: relative;
+      background-color: #c7d468;
+      box-shadow: 0px 0px 8px 3px #bdbdbd1a;
+    }
+
+    .channel {
+      padding-top: 2em;
+      width: 100%;
+      display: grid;
+      grid-template-columns: calc(45% - 1em) calc(55% - 1em);
+      grid-gap: 2em;
+    }
+
+    .metadata-container {
+      max-width: 30em;
+    }
+
+    .block {
+      margin-bottom: 1em;
+    }
+
+    .fullsizeable {
+      cursor: pointer;
+      transition: all 200ms;
+    }
+
+    .fullsizeable:hover {
+      transform: scale(1.02);
+    }
+
+    .fullsize {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222e;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .fullsize img,
+    .fullsize video {
+      max-width: 98%;
+      max-height: 90vh;
+    }
+    .businesscard {
+      z-index: 100000;
+      position: absolute;
+      width: 200px;
+      height: 500px;
+      left: 20px;
+      top: 20px;
+    }
+
+		@media only screen and (max-width: 800px) {
+			.main {
+				display: block;
+				overflow-y: scroll;
+			}
+
+			.links {
+				position: inherit;
+				bottom: 0em;
+				left: 0em;
+				margin-top: 2em;
+			}
+
+			img {
+				max-width: calc(90% - 2em);
+				max-height: 80vh;
+			}
+
+			.channel {
+				display: block;
+				padding: 2em;
+			}
+
+			.metadata-container{
+				max-width: 30em;
+				width: calc(92% - 2em);
+			}
+		}
