@@ -161,6 +161,10 @@
 				overflow-y: scroll;
 			}
 
+			h1 {
+				text-decoration: none;
+			}
+
 			.links {
 				position: inherit;
 				bottom: 0em;
@@ -169,13 +173,15 @@
 			}
 
 			img {
-				max-width: calc(90% - 2em);
+				max-width: calc(100% - 2em);
 				max-height: 80vh;
 			}
 
 			.channel {
 				display: block;
-				padding: 2em;
+				width: calc(100% - 4em);
+				margin: 2em;
+				border-top: 1px solid #ddd;
 			}
 
 			.metadata-container{
