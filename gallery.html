@@ -62,18 +62,50 @@
     }
 
     img {
-      max-width: 70%;
-      max-height: 20vh;
+      max-height: 15vh;
     }
 
     .intro-text {
       position: absolute;
+      z-index: 1;
       right: 20rem;
-      top: 15rem;
+      top: 30rem;
     }
 
     /* containers */
+     .dance {
+      overflow-x: scroll;
+      position: relative;
+      display: flex;
 
+      flex-wrap: wrap;
+      background-color: #e9e6e6;
+      margin-top: 2em;
+      min-width: 295vmax;
+      margin-left: 32em;
+    }
+    .pristine {
+      overflow-x: scroll;
+      position: relative;
+      display: flex;
+
+      flex-wrap: wrap;
+      background-color: #e9e6e6;
+      margin-top: 2em;
+      min-width: 295vmax;
+      margin-left: 32em;
+    }
+    .taokhe {
+      overflow-x: scroll;
+      position: relative;
+      display: flex;
+
+      flex-wrap: wrap;
+      background-color: #c66607;
+      margin-top: 1em;
+      min-width: 295vmax;
+      margin-left: 22em;
+    }
     .victoria {
       overflow-x: scroll;
       position: relative;
@@ -112,6 +144,7 @@
       min-width: 295vmax;
       margin-left: 22em;
     }
+
 
     /*aaryans code*/
 
@@ -176,7 +209,9 @@
       display: none;
     }
   </style>
+
   <body>
+
     <div class="intro-text">
       <p>
         Taking a picture to capture it /<br />
@@ -185,17 +220,38 @@
         What a feeling to be alive
       </p>
     </div>
+
+    <div class="Link"></div>
+
+        <div class="horizontal-scroll">
+      <div class="taokhe"></div>
+    </div>
+
+
     <div class="horizontal-scroll">
       <div class="victoria"></div>
     </div>
-    <div class="Link"></div>
-    <div class="else"></div>
+
+    <div class="horizontal-scroll">
+      <div class="else"></div> 
+    </div>
+    
+    <div class="horizontal-scroll">
+      <div class="dance"></div>
+    </div>
+    
+                <div class="horizontal-scroll">
+      <div class="pristine"></div>
+    </div>
+
     <div class="horizontal-scroll">
       <div class="darkroom"></div>
     </div>
+
     <div class="horizontal-scroll">
       <div class="pixel-images"></div>
     </div>
+
     <div class="box-shadow"></div>
   </body>
   <script src="./gallery.js" type="module"></script>

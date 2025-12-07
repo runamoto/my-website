@@ -6,6 +6,9 @@ fetch("./gallerydata.json")
     let darkroom_images = "";
     let pixel_images = "";
     let Victoria = "";
+    let tao_khe = "";
+    let pristine = "";
+    let dance = "";
     h += `<div class= 'text block'>
         <h1> <span data-scroll id="highlight">${channel.title} </span> </h1>
         </div>`;
@@ -40,34 +43,66 @@ fetch("./gallerydata.json")
       //IMAGE
       // if block is IMAGE do something
 
+    
       if (block.class == "Image") {
-        if (block.description.trim() == "darkroom") {
+
+        if (block.title.trim() == "Dance") {
+          dance += `
+          <div class="block image fullsizeable" block-id="${block.id}">
+          <p>${block.title}</p>
+          <img src = ${block.image.thumb.url}>  </img>
+          </div>`;
+        } 
+
+        else if (block.title.trim() == "darkroom") {
           darkroom_images += `
           <div class="block image fullsizeable" block-id="${block.id}">
           <p>${block.title}</p>
           <img src = ${block.image.thumb.url}>  </img>
           </div>`;
-        } else if (block.description.trim() == "pixel room") {
+        } 
+        
+        else if (block.title.trim() == "pixel room") {
           pixel_images += `
           <div class="block image fullsizeable" block-id="${block.id}">
           <p>${block.title}</p>
           <img src = ${block.image.thumb.url}>  </img>
           </div>`;
-        } else if (block.description.trim() == "Victoria") {
+        }
+        
+        else if (block.title.trim() == "Victoria") {
           Victoria += `
           <div class="block image fullsizeable" block-id="${block.id}">
           <p>${block.title}</p>
           <img src = ${block.image.thumb.url}>  </img>
           </div>`;
-        } else {
+        } 
+        
+        else if (block.title.trim() == "tao-khe") {
+          tao_khe += `
+          <div class="block image fullsizeable" block-id="${block.id}">
+          <p>${block.title}</p>
+          <img src = ${block.image.thumb.url}>  </img>
+          </div>`;
+        }
+
+        else if (block.title.trim() == "pristine") {
+          pristine += `
+          <div class="block image fullsizeable" block-id="${block.id}">
+          <p>${block.title}</p>
+          <img src = ${block.image.thumb.url}>  </img>
+          </div>`;
+        }
+        
+        else {
           h += `
           <div class="block image fullsizeable" block-id="${block.id}">
-          tags = '${block.description}' >
           <p>${block.title}</p>
           <img src = ${block.image.thumb.url}> </img>
 
           </div>`;
         }
+
       }
 
       //
@@ -103,6 +138,10 @@ fetch("./gallerydata.json")
     document.querySelector(".pixel-images").innerHTML = pixel_images;
     document.querySelector(".victoria").innerHTML = Victoria;
     document.querySelector(".else ").innerHTML = h;
+    document.querySelector(".taokhe ").innerHTML = tao_khe;
+    document.querySelector(".pristine ").innerHTML = pristine;
+    document.querySelector(".dance ").innerHTML = dance;
+
 
     let mountonclick = () => {
       document.querySelectorAll(".fullsizeable").forEach((e) => {
@@ -128,6 +167,6 @@ fetch("./gallerydata.json")
     mountonclick();
   });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var trigger = new ScrollTrigger();
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   var trigger = new ScrollTrigger();
+// });
