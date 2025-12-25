@@ -1,5 +1,7 @@
+
 import { token as auth } from "./auth.js";
 import fetch from "node-fetch";
+
 let options = {
   headers: {
     Authorization: "Bearer " + auth,
