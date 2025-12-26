@@ -2,118 +2,67 @@
 <html lang="en">
 <head>
     <script src="./blog.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-        body {
-    padding: 20px;
-    background: #fceed0;
-    }
-
-        @font-face {
-    font-family: "body";
-    src: url("./fonts/SpaceMono-Regular.ttf");
-    }
-
-        @font-face {
-    font-family: "title";
-    src: url("./fonts/angelica.ttf");
-    }
-    
-    .post {
-        margin: 6px;
-        border: solid 1px rgb(68, 62, 48);
-        
-    }
-    * {
-padding: 0.1vw;
-margin: 0.1vw;
-    }
-    .title {
-        font-family: "title", monospace;
-        font-size: 3vw;
-        text-align: center;
-    }
-    .textbody {
-        font-family: "body", monospace;
-        font-size: 1vw;
-        width: 60vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-    }
-    p.time {
-        font-family: "body", monospace;
-        text-align: right;
-        font-size: 1vw;
-        color: rgb(66, 41, 9);
-    }
-    h1 {
-        padding: 10px;
-        font-family: "title", monospace;
-        font-size: 5vw;
-        text-align: center;
-    }
-        h3 .description {
-        font-family: "body", monospace;
-        text-align: left;
-    }
-
-    .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+    <link rel="stylesheet" href=./blogposts/blog.css>
+    <title>Blogology</title>
+    <style>
+        a:link {
+  color: #86aa56;
+  background-color: transparent;
   text-decoration: none;
-  display: block;
 }
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {};
-</style>
+a:visited {
+  color: #698644;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #698644;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+        .main-title {
+            font-family:'title', sans-serif;
+            font-size: 70px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .post-list {
+            list-style-type: none;
+            padding: 0;
+            font-family: 'body', monospace;
+            font-size: 20px;
+        }
+    </style>
 </head>
-
-
+	<div class=main-title> Runa's BLOG </div>
+<h2> Introduction </h2>
+<br>
+<p>Dear Reader,</p>
+<p> It seems arbitrary to give a website an introduction; after all, it does not have to abide by laws such as that of a book or letter...Perhaps a webpage dedicated to writing deserves it's own rules...mwahahahaha. </p>
+<p> Before this blog, I had my <a href= "pinboard.html">pinboard.</a> The issue with it was that, everytime I had to make a new post, I would have to write it down on VSCode which as we know is not a great text editor...Hence, my pinboard was stagnant for a lot of the year because I was heavily unmotivated to deal with that. <br>
+My next option was to use are.na blocks, but that would prove difficult for a few reasons: Are.na blocks aren't great text editors either. I was once writing a very compassionate, sincere essay on are.na, I was typing away and accidentally pressed a key that I shouldnt have. BOOM, all my writing, gone. I took a break from arena after that...<br>
+There were a few other issues with using are.na relating to my profeciency levels with javascript. I want to re-rehearse the basics before I tackle anything more complex.<br>
+Finally, the blogs most recent evolution, is this. Aaryan, had recently begun his own blog and for that, he had the idea of using markdown and images embedded through are.na links. This enables us to be able to edit our text in a less precarious, more acessible way.<br>
+<br>You will find that this blog is a mixure of my last pinboard, riddled with saparatic and random publishings from throughout the year, as well as others that are more consice. Please bear with me as I am working on a system to organize them. For now, Enjoy the mess I've made over the past year.<br>
+<br>
+<p>Lotus,</p>
+<p>—Runa </p>
+<div class="main-title">All Texts:</div>
 
 <body>
-<div class="dropdown">
-  <h1 class="dropbtn">Dropdown</h1>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-    <div class="textbody">
-    </div>
-
-</div>
-
-    </body>
-</html>
+    <!-- main page stuff -->
+    <div id ="main-title"></div>
+    <div class="all-texts"></div>
+    <!-- blog stuff -->
+    <div class="date"></div>
+    <div class="context"></div>
+    <ul class="post-list">
+    <li><a href="/blogposts/Contemplations.html">Contemplations of a freshly turned 23 year old girl</a> <span class="post-date"> — 14, DECEMBER, 2025</span></li>
+    <li><a href="/blogposts/Meditations.html">Meditations on touching the Earth</a> <span class="post-date"> — 7, SEPTEMBER, 2025</span></li>
+    </ul>
+</body>

@@ -136,3 +136,32 @@ files.forEach(path => {
 
 	console.log(path)
 })
+
+// Generate posts list HTML and inject into blog.html
+function generatePostsList() {
+	const postFiles = fs.readdirSync('./blogposts').filter(f => f.endsWith('.html') && f.toLowerCase() !== 'index.html');
+	const items = postFiles.map(f => {
+		const content = fs.readFileSync('./blogposts/' + f, 'utf8');
+		const titleMatch = content.match(/<h[12][^>]*>\s*([^<]+?)\s*<\/h[12]>/i);
+		const dateMatch = content.match(/<div[^>]*class=["']date["'][^>]*>\s*([^<]+?)\s*<\/div>/i);
+		const title = titleMatch ? titleMatch[1].trim() : f.replace('.html','');
+		const date = dateMatch ? dateMatch[1].trim() : '';
+		return `    <li><a href="/blogposts/${f}">${title}</a> <span class="post-date"> — ${date}</span></li>`;
+	});
+
+	const listHtml = '<ul id="posts-list">\n' + items.join('\n') + '\n</ul>';
+
+	const blogPath = './blog.html';
+	let blogContent = fs.readFileSync(blogPath, 'utf8');
+	// replace existing posts-list ul (or insert if missing)
+	if (/<ul\s+id=["']posts-list["'][\s\S]*?<\/ul>/i.test(blogContent)) {
+		blogContent = blogContent.replace(/<ul\s+id=["']posts-list["'][\s\S]*?<\/ul>/i, listHtml);
+	} else {
+		// fallback: append before closing body
+		blogContent = blogContent.replace(/<\/body>/i, listHtml + '\n</body>');
+	}
+	fs.writeFileSync(blogPath, blogContent, 'utf8');
+	console.log('Updated blog.html with posts list');
+}
+
+generatePostsList();

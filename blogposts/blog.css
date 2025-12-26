@@ -1,0 +1,82 @@
+
+    body {
+    background: #fffeec;
+    margin: 40px; 
+    color:brown;
+    }
+
+        @font-face {
+    font-family: "body";
+    src: url("../fonts/VictorMono-VariableFont_wght.ttf");
+    }
+
+        @font-face {
+    font-family: "title";
+    src: url("../fonts/angelica.ttf");
+    }
+
+            @font-face {
+    font-family: "sub";
+    src: url("../fonts/Abordage-Regular.otf");
+    }
+
+img {
+width: 100%;
+margin-top: 20px;
+display: flex;
+padding: 20px;
+align-items: center;
+justify-content: center;
+}
+
+br {
+content: "";
+margin: .1em;
+display: block;
+font-size: 24%;
+}
+
+p {
+font-family: 'body', monospace;
+}
+
+h1, h2{
+
+margin: 5px;
+font-family:'title', sans-serif;
+}
+
+h3 {
+font-family: 'body', monospace;
+opacity: 0.8;
+margin-bottom: 50px;
+}
+
+p {font-size: 1em; }
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 1em; }
+:root{
+    --main-color: #4e5eba;
+    --accent-color: #a5bae8;
+    --background-color: #fffeec; 
+}
+.body {
+    color: var(--accent-color);
+    background-color: var(--main-color);
+    padding: 20px;
+    max-width: 49em;
+    margin: auto;
+    font-family: 'body', monospace;
+    line-height: 1.6em;
+    }
+.context {
+    color: var(--main-color);}
+
+.date {
+    font-family: 'sub', sans-serif;
+    font-size: 1em;
+    color: #888888;
+    margin-bottom: 10px;
+    }
+
