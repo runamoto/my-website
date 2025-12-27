@@ -113,7 +113,7 @@ let html = body => `
 </html>`
 
 let transform =  (path) => {
-    let filename = "./blogposts/" + path
+    let filename = "./words/" + path
 	let file = fs.readFileSync(filename, { encoding: 'utf-8' })
 	let content =  MD(file);
 	let split = filename.split('.')
@@ -122,7 +122,7 @@ let transform =  (path) => {
 	fs.writeFileSync(htmlpath, html(content.join("\n")))
 }
 
-let files = fs.readdirSync('./blogposts', { recursive: true })
+let files = fs.readdirSync('./words', { recursive: true })
 files.forEach(path => {
 	if (path.includes('.git')) return
 	// emacs pain...
@@ -139,14 +139,14 @@ files.forEach(path => {
 
 // Generate posts list HTML and inject into blog.html
 function generatePostsList() {
-	const postFiles = fs.readdirSync('./blogposts').filter(f => f.endsWith('.html') && f.toLowerCase() !== 'index.html');
+	const postFiles = fs.readdirSync('./words').filter(f => f.endsWith('.html') && f.toLowerCase() !== 'index.html');
 	const items = postFiles.map(f => {
-		const content = fs.readFileSync('./blogposts/' + f, 'utf8');
+		const content = fs.readFileSync('./words/' + f, 'utf8');
 		const titleMatch = content.match(/<h[12][^>]*>\s*([^<]+?)\s*<\/h[12]>/i);
 		const dateMatch = content.match(/<div[^>]*class=["']date["'][^>]*>\s*([^<]+?)\s*<\/div>/i);
 		const title = titleMatch ? titleMatch[1].trim() : f.replace('.html','');
 		const date = dateMatch ? dateMatch[1].trim() : '';
-		return `    <li><a href="/blogposts/${f}">${title}</a> <span class="post-date"> — ${date}</span></li>`;
+		return `    <li><a href="/words/${f}">${title}</a> <span class="post-date"> — ${date}</span></li>`;
 	});
 
 	const listHtml = '<ul id="posts-list">\n' + items.join('\n') + '\n</ul>';
