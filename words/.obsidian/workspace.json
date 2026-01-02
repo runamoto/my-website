@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Meditations"
             }
+          },
+          {
+            "id": "5b11668dbb16c931",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resolutions.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Resolutions"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,11 +198,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "72b45bdf7e1f7234",
+  "active": "5b11668dbb16c931",
   "lastOpenFiles": [
-    "Meditations.html",
-    "Contemplations.md",
     "Meditations.md",
+    "Resolutions.md",
+    "Contemplations.md",
+    "Resolutions.html",
+    "Meditations.html",
     "Contemplations.html"
   ]
 }
