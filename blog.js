@@ -29,10 +29,10 @@ fetch("./blogdata.json")
             if (block.class == "Text") {
                 textblocks += `
         <div class="dropdown">
-  <h1 class="dropbtn">${block.title} </h1>
-  <div class="dropdown-content">
+<h1 class="dropbtn">${block.title} </h1>
+<div class="dropdown-content">
     ${block.content_html}
-  </div>
+</div>
 </div>
         <div class= "post">
         <p class='time'> ${block.created_at} </p>

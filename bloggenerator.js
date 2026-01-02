@@ -137,7 +137,7 @@ files.forEach(path => {
 	console.log(path)
 })
 
-// Generate posts list HTML and inject into blog.html
+//  posts list HTML and inject into blog.html
 function generatePostsList() {
 	const postFiles = fs.readdirSync('./words').filter(f => f.endsWith('.html') && f.toLowerCase() !== 'index.html');
 	const items = postFiles.map(f => {

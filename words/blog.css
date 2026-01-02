@@ -3,12 +3,11 @@
     background: #fffeec;
     margin: 40px auto; 
     max-width: 800px;
-    color:brown;
     }
 
         @font-face {
     font-family: "body";
-    src: url("../fonts/PanamaMonospaceRegular.otf");
+    src: url("../fonts/Adelphe-FlorealRegular.otf");
     }
 
         @font-face {
@@ -20,6 +19,19 @@
     font-family: "sub";
     src: url("../fonts/Abordage-Regular.otf");
     }
+
+                @font-face {
+    font-family: "extra";
+    src: url("../fonts/junicode-smexpitalic.otf");
+    }
+
+    #post-list {
+padding: 0;
+font-family: 'extra';
+    font-size: 1.3em;
+}
+
+
 
 img {
 width: 100%;
@@ -38,24 +50,29 @@ font-size: 24%;
 }
 
 p {
-font-family: 'body', monospace;
+font-family: 'body';
 max-width: 72ch;
-line-height: 1.35em;
+line-height: 1.37em;
 }
 
 h1, h2{
 
 margin: 5px;
 font-family:'title', sans-serif;
+margin-bottom: 20px;
 }
 
 h3 {
-font-family: 'body', monospace;
+font-family: 'extra';
 opacity: 0.8;
 margin-bottom: 50px;
 }
 
-p {font-size: 1.4em; }
+a {
+color: var(--link);
+}
+
+p {font-size: 1em; }
 h1 { font-size: 4em; }
 h2 { font-size: 3em; }
 h3 { font-size: 1em; }
@@ -73,6 +90,11 @@ h3 { font-size: 1em; }
     font-family: 'body', monospace;
     line-height: 1.6em;
     }
+
+p .body {
+    font-size: 1em;
+    }
+    
 .context {
     color: var(--main-color);}
 
@@ -82,4 +104,58 @@ h3 { font-size: 1em; }
     color: #888888;
     margin-bottom: 10px;
     }
+
+/* Themes */
+:root {
+    --bg: #442d1f;
+    --text: #d9d9b6;
+    --muted: #888888;
+    --link: #8fba57;
+}
+
+body.theme-default {
+    background: var(--bg);
+    color: var(--text);
+}
+
+body.theme-dark {
+    --bg: #0f1115;
+    --text: #e6e6e6;
+    --muted: #bfc3c7;
+    --link: #7fb77f;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body.theme-contrast {
+    --bg: #cf2525;
+    --text: #cdb3b3;
+    --muted: #333333;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Theme butttons thankq to danny.r on codepen*/
+.theme-controls {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 12px 0 18px 0;
+}
+.theme-controls button {
+    background: transparent;
+    border: 1px solid var(--muted);
+    color: var(--text);
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'body';
+}
+.theme-controls button.active {
+    border-color: var(--link);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+}
+
+.backlink a { color: var(--link); }
+
 

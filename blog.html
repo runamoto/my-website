@@ -4,48 +4,32 @@
     <script src="./blog.js"></script>
     <link rel="stylesheet" href=./words/blog.css>
     <title>Blogology</title>
+<script src="./theme-toggle.js" defer></script>
     <style>
-        a:link {
-  color: #86aa56;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: #698644;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: #698644;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
+
         .main-title {
             font-family:'title', sans-serif;
             font-size: 70px;
             text-align: center;
             margin-top: 20px;
         }
-        .post-list {
-            list-style-type: none;
-            padding: 0;
-            font-family: 'body', monospace;
-            font-size: 20px;
-        }
         .opening-letter {
             font-family: 'body', monospace;
             max-width: 720px;
             margin: 20px auto;
-            font-size: 12px;
-            line-height: 1em;
+            font-size: 1em;
+            line-height: 1.1em;
         }
     </style>
 </head>
+
+<!-- theme controls -->
+<div class="theme-controls" aria-label="Theme switcher">
+    <button data-theme="default" type="button">Forest</button>
+    <button data-theme="dark" type="button">Cave</button>
+    <button data-theme="contrast" type="button">Evil blog</button>
+</div>
+
 	<div class=main-title> Runa's BLOG </div>
 <div class=opening-letter><h2> Introduction </h2>
 <br>
@@ -61,6 +45,7 @@ Finally, the blogs most recent evolution, is this. Aaryan, had recently begun hi
 <p>—Runa </p></div>
 <div class="main-title">All Texts:</div>
 
+
 <body>
     <!-- main page stuff -->
     <div id ="main-title"></div>
@@ -69,13 +54,11 @@ Finally, the blogs most recent evolution, is this. Aaryan, had recently begun hi
     <!-- blog stuff -->
     <div class="date"></div>
     <div class="context"></div>
-    <ul class="post-list">
-    <li><a href="/words/Contemplations.html">Contemplations of a freshly turned 23 year old girl</a> <span class="post-date"> — 14, DECEMBER, 2025</span></li>
-    <li><a href="/words/Meditations.html">Meditations on touching the Earth</a> <span class="post-date"> — 7, SEPTEMBER, 2025</span></li>
-    </ul>
-<ul id="posts-list">
-    <li><a href="/words/Contemplations.html">Contemplations of a freshly turned 23 year old girl</a> <span class="post-date"> — 14, DECEMBER, 2025</span></li>
-    <li><a href="/words/Meditations.html">Meditations on touching the Earth</a> <span class="post-date"> — 7, SEPTEMBER, 2025</span></li>
+
+<ul id="post-list">
     <li><a href="/words/Resolutions.html">New Years Revolution 2025</a> <span class="post-date"> — ?, ???????, 202?</span></li>
+    <li><a href="/words/Contemplations.html">Contemplations of a freshly turned 23 year old girl</a> <span class="post-date"> — 14, DECEMBER, 2025</span></li>
+    <li><a href="/words/Meditations.html">Meditations on touching the Earth</a> <span class="post-date"> — 7, SEPTEMBER, 2025</span></li>
+    
 </ul>
 </body>
