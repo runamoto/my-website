@@ -2,7 +2,7 @@
  :root{
     --main-color: #4e5eba;
     --accent-color: #a5bae8;
-    --background-color: #fffeec; 
+    --background-color: #eceeff; 
 }
 </style>
 <div class="context">

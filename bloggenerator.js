@@ -1,5 +1,6 @@
 import fs from 'fs'
 import markdownIt from "./markdown-it/markdown-it.js";
+import path from 'path'
 
 let md = new markdownIt('commonmark')//.use(makrdownItMark);
 
@@ -137,31 +138,29 @@ files.forEach(path => {
 	console.log(path)
 })
 
-//  posts list HTML and inject into blog.html
-function generatePostsList() {
-	const postFiles = fs.readdirSync('./words').filter(f => f.endsWith('.html') && f.toLowerCase() !== 'index.html');
-	const items = postFiles.map(f => {
-		const content = fs.readFileSync('./words/' + f, 'utf8');
-		const titleMatch = content.match(/<h[12][^>]*>\s*([^<]+?)\s*<\/h[12]>/i);
-		const dateMatch = content.match(/<div[^>]*class=["']date["'][^>]*>\s*([^<]+?)\s*<\/div>/i);
-		const title = titleMatch ? titleMatch[1].trim() : f.replace('.html','');
-		const date = dateMatch ? dateMatch[1].trim() : '';
-		return `    <li><a href="/words/${f}">${title}</a> <span class="post-date"> — ${date}</span></li>`;
-	});
 
-	const listHtml = '<ul id="posts-list">\n' + items.join('\n') + '\n</ul>';
+const dir = './words'
+const filesW = fs.readdirSync(dir).filter(f => f.endsWith('.html'))
 
-	const blogPath = './blog.html';
-	let blogContent = fs.readFileSync(blogPath, 'utf8');
-	// replace existing posts-list ul (or insert if missing)
-	if (/<ul\s+id=["']posts-list["'][\s\S]*?<\/ul>/i.test(blogContent)) {
-		blogContent = blogContent.replace(/<ul\s+id=["']posts-list["'][\s\S]*?<\/ul>/i, listHtml);
-	} else {
-		// fallback: append before closing body
-		blogContent = blogContent.replace(/<\/body>/i, listHtml + '\n</body>');
-	}
-	fs.writeFileSync(blogPath, blogContent, 'utf8');
-	console.log('Updated blog.html with posts list');
+filesW.forEach(file => {
+const p = path.join(dir, file)
+let content = fs.readFileSync(p, 'utf8')
+  // skip if backlink already present
+if (/class=["']backlink["']|href=["']\.\./i.test(content)) {
+    console.log('Skipping (already has backlink):', file)
+    return
 }
 
-generatePostsList();
+const backlink = `\n    <p class="backlink"><a href="../blog.html">← Back to Blog</a></p>\n`;
+
+if (/<\/body>/i.test(content)) {
+    content = content.replace(/<\/body>/i, backlink + '</body>')
+} else {
+    content = content + '\n' + backlink
+}
+
+fs.writeFileSync(p, content, 'utf8')
+console.log('Inserted backlink into', file)
+})
+
+console.log('Done')
