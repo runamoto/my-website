@@ -1,8 +1,8 @@
 <style>
  :root{
-    --main-color: rgb(136, 50, 53);
-    --accent-color: rgb(196, 157, 224);;
-    --background-color: #fffeec; 
+--main-color: rgb(136, 50, 53);
+  --accent-color: #e1d56f;
+  --background-color: #e1d56f;
 }
 </style>
 <div class="context">

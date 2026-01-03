@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contemplations.md",
+                "file": "Resolutions.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Contemplations"
+              "title": "Resolutions"
             }
           }
         ],
@@ -200,9 +200,9 @@
   },
   "active": "5b11668dbb16c931",
   "lastOpenFiles": [
+    "Contemplations.md",
     "Meditations.md",
     "Resolutions.md",
-    "Contemplations.md",
     "Resolutions.html",
     "Meditations.html",
     "Contemplations.html"
