@@ -13,6 +13,11 @@
   src: url("./fonts/runatype.ttf");
 }
 
+@font-face {
+  font-family: "title";
+  src: url("./fonts/ESKARGOT.ttf");
+}
+
 a:hover {
   color: #bf86be;
   text-decoration: underline;
@@ -38,6 +43,19 @@ body {
 
   margin: 0 auto;
   /* *center barge* */
+  position: relative;
+}
+
+#frame-bg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgb(56, 138, 165);
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: -1;
 }
 
 li {
@@ -48,10 +66,9 @@ li {
 }
 
 h1 {
-  color: #68b084;
-  -webkit-text-stroke: 0.75px #336952;
-  text-shadow: #f0e40c 1px 0 10px;
-  font-size: 40px;
+  color: #2f7a3a;
+font-family: 'title';
+font-size: 3em;
 }
 
 h2 {
@@ -70,24 +87,38 @@ img:active {
   -webkit-transform: scale(2);
   transform: scale(2);
 }
-/* ---------------header section!!------------*/
-#header {
+
+
+
+#topBar {
+  margin-top:10px;
+  border-radius: 15px 15px 0 0;
   width: 100%;
+  height: 30px;
+  padding: 30px;
+  font-size: smaller;
+  background-color: #c7d468;
+}
+
+/* ---------------header section!!------------*/
+.header {
+  width: 100%;
+  font-size: 3em;
+  font-family: 'title';
   background-color: #c7d468;
   /* header color here! */
-  height: 20px;
-  /* this is only for a background image! */
-  /*background-image: var(--header-image);*/
-  background-size: 100%;
+  height: 150px;
+  background-size: 300px;
 }
 
 /* ---------------navigation section!!------------*/
 
 #navbar {
   height: 40px;
-  background-color: #13092d;
+  background-color: #c7d468;
   /* navbar color */
   width: 100%;
+  border-radius: 0px 0px 15px 15px;
 }
 
 #navbar ul {
@@ -104,7 +135,7 @@ img:active {
 
 /* navigation links*/
 #navbar li a {
-  color: #c7d468;
+  color: #414618;
   -webkit-text-stroke: 0.25px #336952;
   /* navbar text color */
   font-weight: 800;
@@ -189,13 +220,7 @@ strong {
 
 /* CSS for extras */
 
-#topBar {
-  width: 100%;
-  height: 30px;
-  padding: 10px;
-  font-size: smaller;
-  background-color: #13092d;
-}
+
 
 /* BELOW IS MEDIA QUERY */
 
