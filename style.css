@@ -1,6 +1,6 @@
 :root {
   --header-image: url("https://sadhost.neocities.org/images/layouts/wp.jpeg");
-  --body-bg-image: url("https://omama.neocities.org/grass2.jpg");
+  /* --body-bg-image: url("https://omama.neocities.org/grass2.jpg"); */
 
   /* colors */
   --content: #43256e;
@@ -15,7 +15,12 @@
 
 @font-face {
   font-family: "title";
-  src: url("./fonts/ESKARGOT.ttf");
+  src: url("./fonts/Basteleur-Moonlight.ttf");
+}
+
+@font-face {
+  font-family: "body2";
+  src: url("./fonts/Abordage-Regular.otf");
 }
 
 a:hover {
@@ -26,11 +31,11 @@ a:hover {
 body {
   font-family: "runa", sans-serif;
   margin: 0;
-  background-color: #32a852;
+  background-color: #473f34;
   /* background image adjusterr*/
   background-size: cover;
-  color: #47984e;
-  background-image: var(--body-bg-image);
+  color: #575245;
+  /* background-image: var(--body-bg-image); */
 }
 
 * {
@@ -49,24 +54,21 @@ body {
 #frame-bg {
   position: absolute;
   top: 10px;
-  left: 10px;
-  right: 10px;
+  left: 0;
+  right: 0;
   bottom: 10px;
-  background-color: rgb(56, 138, 165);
+  background-color: #9ea66b;
   border-radius: 20px;
   pointer-events: none;
   z-index: -1;
 }
 
 li {
-  color: #68b084;
-  -webkit-text-stroke: 0.25px #336952;
-  text-shadow: #dc789a 1px 0 10px;
-  font-size: 15px;
+list-style-type: georgian;
 }
 
 h1 {
-  color: #2f7a3a;
+  color: #595041;
 font-family: 'title';
 font-size: 3em;
 }
@@ -76,7 +78,7 @@ h2 {
 }
 
 h3 {
-  font-size: 15px;
+
 }
 
 p {
@@ -89,33 +91,39 @@ img:active {
 }
 
 
-
 #topBar {
   margin-top:10px;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 30px;
-  padding: 30px;
+  padding: 20px;
+  padding-bottom: 5em;
+  padding-top: 10px;
   font-size: smaller;
-  background-color: #c7d468;
+  background-color: #9ea66b;
+  color: #f4ecd1;
 }
 
 /* ---------------header section!!------------*/
 .header {
   width: 100%;
   font-size: 3em;
+  padding-top: 20px;
   font-family: 'title';
-  background-color: #c7d468;
+  background-color: #f4ecd1;
   /* header color here! */
-  height: 150px;
+  height: 100px;
   background-size: 300px;
+  text-align: center;
 }
+
 
 /* ---------------navigation section!!------------*/
 
 #navbar {
-  height: 40px;
-  background-color: #c7d468;
+  padding-top: 20px;
+  height: 63px;
+  background-color: #f4ecd1;
   /* navbar color */
   width: 100%;
   border-radius: 0px 0px 15px 15px;
@@ -135,18 +143,20 @@ img:active {
 
 /* navigation links*/
 #navbar li a {
-  color: #414618;
-  -webkit-text-stroke: 0.25px #336952;
-  /* navbar text color */
+  font-family: "runa";
+  font-size: 20px;
+  color: #595041;
   font-weight: 800;
   /* this removes the underline */
   /*text-decoration: none;*/
 }
 
-/* navigation link when a link is hovered over */
-#navbar li a:hover {
-  color: #bf86be;
-  text-decoration: underline;
+#navbar li a::after {
+  content: "";
+}
+
+#navbar li a:hover::after {
+  content: "!!";
 }
 
 #flex {
@@ -155,47 +165,54 @@ img:active {
 
 /* SIDEBAR DESIGN */
 aside {
-  background-color: #eae8e5;
+  font-family: "body2";
+  font-size: 15px;
+  background-color: #473f34;
+  color:#f4ecd1;
   width: 200px;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  /* this makes the sidebar text slightlyyyy smaller */
-  font-size: smaller;
 }
 
 /* pinboard box */
 .box {
-  background-color: #c7d468;
-  border: 1px solid #ed64f5;
+  background-color: #f4ecd1;
+  border: 1px solid #9ea66b;
+  color: #473f34;
   padding: 10px;
 }
 
-/* links in sidebar*/
+/* links */
 #container a {
-  color: #edaecf;
-  -webkit-text-stroke: 0.25px #d14141;
+  color: #9ea66b;
   stroke-width: 1;
-  font-weight: bold;
 
   /*text-decoration:none;*/
 }
 
+/* left sidebar ordering */
+#leftSidebar {
+  order: 1;
+  flex: 0 0 240px;
+}
+
+/* MAIN AREA */
 /* MAIN AREA */
 main {
-  background-color: #eae8e5;
-  flex: 1;
+  background-color: #8c9657;
+  color:#f0e5e7;
+  flex: 1 1 60%;
   order: 2;
   border-radius: 10px;
   margin: 20px;
-  /* ---------buttons border image */
-  border: 100px solid;
-  border-image: url("https://omama.neocities.org/button-border-removebg-preview.png")
-    round 140;
+  padding: 20px;
+  border: none;
+  min-width: 0; /* prevents overflow from long content */
 }
+main a {
+  color: #473f34 !important;
 
-*/ #leftSidebar {
-  order: 1;
 }
 
 /* only if i feel like adding another side bar later */
@@ -218,7 +235,7 @@ strong {
   color: #ed64f5;
 }
 
-/* CSS for extras */
+
 
 
 
@@ -254,5 +271,19 @@ and then subtrack it by 100. use this new number as the
 
   #navbar ul {
     flex-wrap: wrap;
+  }
+}
+
+
+#header-container .header h1 {
+  font-size: 0.9em !important;
+  line-height: 1.1;
+  margin: 0;
+  padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+  #header-container .header h1 {
+    font-size: 0.9em !important;
   }
 }
