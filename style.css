@@ -23,8 +23,14 @@
   src: url("./fonts/Abordage-Regular.otf");
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "runa", sans-serif;
+  overflow-x: hidden;
+  position: relative;
   margin: 0;
   background-color: #473f34;
   /* background image adjusterr*/
@@ -115,6 +121,27 @@ img {
   background-size: 300px;
   font-size:3.5vw;
   text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+#header-container .header h1 {
+  font-size: 1em ;
+  line-height: 1.1;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* Phone view */
+@media (max-width: 600px) {
+  .header {
+    height: 47px;
+    padding-top: 6px;
+  }
+  .header h1 {
+    margin: 0;
+    line-height: 32px; /* vertically center the text inside the shorter header */
+    font-size: 1.5em !important; /* make title 1.5em on phones */
+  }
 }
 
 
@@ -148,8 +175,12 @@ img {
   font-size: 20px;
   color: #595041;
   font-weight: 800;
-  /* this removes the underline */
-  /*text-decoration: none;*/
+
+}
+@media (max-width: 600px) {
+  #navbar a {
+    font-size: 0.8em !important;
+  }
 }
 
 #navbar li a::after {
@@ -231,6 +262,7 @@ footer {
   margin: 20px;
 }
 
+
 strong {
   /* bold text style*/
   color: #ed64f5;
@@ -276,15 +308,5 @@ and then subtrack it by 100. use this new number as the
 }
 
 
-#header-container .header h1 {
-  font-size: 0.9em !important;
-  line-height: 1.1;
-  margin: 0;
-  padding: 10px 0;
-}
 
-@media (max-width: 600px) {
-  #header-container .header h1 {
-    font-size: 0.9em !important;
-  }
-}
+
