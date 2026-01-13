@@ -95,8 +95,7 @@ tagButton('all');
 tagButton('typography');
 tagButton('ecology');
 tagButton('archiving');
-tagButton('photography');
-tagButton('writing');
+
 tagButton('printmaking&textiles');
 tagButton('books');
 tagButton('posters');
