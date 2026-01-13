@@ -6,12 +6,13 @@ function setup() {
 let blocks = [];
 
 function render_channel(channel) {
+  console.log(channel)
   let blocks = channel.contents.map(render_block).join("");
 
   console.log(channel);
   document.querySelector(".project-container").innerHTML += `
-    <div class="channel">
-      <div class="metadata-container">
+    <div class="channel" tags="#all ${channel?.metadata?.description}">
+      <div class="metadata-container" >
         <h1> ${channel.title}</h1>
         <p>${
           channel?.contents.find(function (block) {
@@ -72,3 +73,34 @@ fetch("./data.json")
   .then((res) => res.json())
   .then(init)
   .then(mountonclick);
+
+function tagButton(tag){ console.log(tag);
+  let button = document.getElementById(tag);
+  button.onclick = () => {
+    document.querySelectorAll('.channel').forEach((channel) => {
+      let tags = channel.getAttribute('tags');
+      if (tags.includes("#"+tag)) {
+        channel.style.display = 'block';
+      } else {
+        channel.style.display = 'none';
+      }
+    })
+  }
+}
+
+tagButton('publishing');
+tagButton('research');
+tagButton('film');
+tagButton('all');
+tagButton('typography');
+tagButton('ecology');
+tagButton('archiving');
+tagButton('photography');
+tagButton('writing');
+tagButton('printmaking&textiles');
+tagButton('books');
+tagButton('posters');
+tagButton('films');
+tagButton('ephemera');
+tagButton('websites');
+tagButton('visual-identity');

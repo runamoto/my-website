@@ -6,13 +6,18 @@
     }
 
     @font-face {
-      font-family: "swiss";
-      src: url("./fonts/SuisseIntlLD-Regular.otf");
+      font-family: "body";
+      src: url("./fonts/ABCDiatype-Regular-Trial.otf");
     }
 
     @font-face {
       font-family: "AT";
       src: url("./fonts/AmericanTypewriter.otf");
+    }
+
+    @font-face {
+      font-family: "mono";
+      src: url("./fonts/ABCMonumentGroteskMono-Regular-Trial.otf");
     }
 
     * {
@@ -21,23 +26,24 @@
     }
 
     h1 {
-      font-size: 1.35rem;
+      font-family: 'mono';
+      font-size: 1rem;
       text-transform: capitalize;
-      font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 0.5em;
-      text-decoration-color: #2222;
+        background-color: #c7d468;
+      color:rgb(128, 39, 87);
+
     }
 
     h4 {
+      padding-bottom: 0.5em;
       font-size: 2rem;
-      font-family: "swiss";
+      font-family: "mono";
       font-weight: 100;
       letter-spacing: 0.02em;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 16px;
       margin-top: 1rem;
       font-weight: 300;
       line-height: 1.3em;
@@ -53,7 +59,7 @@
     a p {
       font-weight: 300;
       font-size: 1rem;
-      font-family: "swiss";
+      font-family: "mono";
       margin-top: 0.5rem;
     }
 
@@ -64,14 +70,41 @@
 
     img,
     video {
-      max-width: 98%;
+      max-width: 90%;
       max-height: 80vh;
     }
 
     body {
       background-color: white;
-      font-family: "swiss", sans-serif;
+      font-family: "body", sans-serif;
     }
+
+    .decor {
+        font-size: 3em;
+    padding: .4em 0;
+    margin: 0;
+    line-height: 0;
+  letter-spacing: .1em;
+    }
+
+      button, a.button {
+        background-color: #c7d468;
+      color:rgb(128, 39, 87);
+      font-family: 'mono';
+      font-size: 18px;
+      border: none;
+      }
+      a.button{
+        text-decoration: none;
+      }
+      button::after a.button::after{
+        content: "";
+      }
+
+      button:hover::after,
+      button:focus::after, a.button:hover::after{
+        content: "!!";
+      }
 
     .main {
       width: 100vw;
@@ -79,11 +112,14 @@
       overflow: hidden;
 
       display: grid;
-      grid-template-columns: 28% 70%;
+      grid-template-columns: 25% 75%;
       grid-gap: 2%;
 
-      background-color: #f6eff1;
+      background-color: #f6eff1 ;
+      color: rgb(196, 61, 133);
+
     }
+
 
 
     .project-container {
@@ -99,8 +135,17 @@
     .info {
       padding: 2em;
       position: relative;
-      background-color: #c7d468;
+      background-color: #D7D7D5;
       box-shadow: 0px 0px 8px 3px #bdbdbd1a;
+    }
+
+    .bio-text {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+        .bio-text2 {
+      margin-top: 1.5em;
+      margin-bottom: 5em;
     }
 
     .channel {
@@ -146,20 +191,21 @@
       max-width: 98%;
       max-height: 90vh;
     }
-    .businesscard {
+    /* .businesscard {
       z-index: 100000;
       position: absolute;
       width: 200px;
       height: 500px;
       left: 20px;
       top: 20px;
-    }
+    } */
 
 		@media only screen and (max-width: 800px) {
 			.main {
 				display: block;
 				overflow-y: scroll;
 			}
+
 
 			h1 {
 				text-decoration: none;
