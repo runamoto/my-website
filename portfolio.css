@@ -27,10 +27,12 @@
 
     h1 {
       font-family: 'mono';
-      font-size: 1rem;
+      font-size: 1.5rem;
       text-transform: capitalize;
-        background-color: #c7d468;
+      background-color: #c7d468;
       color:rgb(128, 39, 87);
+			text-decoration: none;
+
 
     }
 
@@ -158,12 +160,20 @@
       grid-gap: 2em;
     }
 
+    .image-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.1em;
+        padding-right: 2em;
+    }
+
     .metadata-container {
       max-width: 30em;
     }
 
     .block {
       margin-bottom: 1em;
+        margin-right: -1em;
     }
 
     .fullsizeable {
@@ -208,10 +218,6 @@
 				overflow-y: scroll;
 			}
 
-
-			h1 {
-				text-decoration: none;
-			}
 
 			.links {
 				position: inherit;
