@@ -137,6 +137,8 @@
       position: relative;
       background-color: #D7D7D5;
       box-shadow: 0px 0px 8px 3px #bdbdbd1a;
+      overflow-y: scroll;
+      scrollbar-width: none;
     }
 
     .bio-text {
