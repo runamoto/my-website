@@ -2,14 +2,14 @@
   "id": 4591617,
   "title": "blog",
   "created_at": "2025-12-18T16:59:29.867Z",
-  "updated_at": "2025-12-23T22:40:37.092Z",
-  "added_to_at": "2025-12-23T22:40:37.092Z",
+  "updated_at": "2025-12-26T18:38:55.405Z",
+  "added_to_at": "2025-12-26T18:38:55.405Z",
   "published": false,
   "open": false,
   "collaboration": false,
   "collaborator_count": 0,
   "slug": "blog-l3u6ahm4ukm",
-  "length": 3,
+  "length": 6,
   "kind": "default",
   "status": "private",
   "user_id": 426715,
@@ -18,10 +18,10 @@
     "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
     "bucket": "https://s3.amazonaws.com/arena_images-temp/",
     "success_action_status": "201",
-    "policy": "eydleHBpcmF0aW9uJzogJzIwMjUtMTItMzBUMjM6MDI6MzYuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
+    "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDEtMjBUMjI6Mzc6NTMuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
     "acl": "public-read",
-    "signature": "PV97s4TC0gIdyaUhQAA6xdUkJpg=",
-    "expires": "2025-12-30T23:02:36.000Z"
+    "signature": "SZRb8oOHfkuur4BM4I551dRoJhs=",
+    "expires": "2026-01-20T22:37:53.000Z"
   },
   "contents": [
     {
@@ -56,10 +56,10 @@
           "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
           "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
         },
-        "channel_count": 305,
-        "following_count": 120,
+        "channel_count": 307,
+        "following_count": 121,
         "profile_id": 1784748,
-        "follower_count": 67,
+        "follower_count": 70,
         "initials": "R꩜",
         "can_index": false,
         "metadata": {
@@ -117,10 +117,10 @@
           "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
           "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
         },
-        "channel_count": 305,
-        "following_count": 120,
+        "channel_count": 307,
+        "following_count": 121,
         "profile_id": 1784748,
-        "follower_count": 67,
+        "follower_count": 70,
         "initials": "R꩜",
         "can_index": false,
         "metadata": {
@@ -178,10 +178,10 @@
           "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
           "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
         },
-        "channel_count": 305,
-        "following_count": 120,
+        "channel_count": 307,
+        "following_count": 121,
         "profile_id": 1784748,
-        "follower_count": 67,
+        "follower_count": 70,
         "initials": "R꩜",
         "can_index": false,
         "metadata": {
@@ -206,6 +206,249 @@
       "connected_by_user_id": 426715,
       "connected_by_username": "Runa ꩜",
       "connected_by_user_slug": "runa"
+    },
+    {
+      "title": "",
+      "updated_at": "2025-12-25T21:13:24.545Z",
+      "created_at": "2025-12-25T21:13:24.521Z",
+      "state": "available",
+      "comment_count": 0,
+      "generated_title": "Untitled",
+      "content_html": "<p>I extracted the earth— sometimes violently, other times tenderly. I did so with kitchen tools and bare hands. An earthworm emerged, then retracted from my touch when I tried to save it from the sharp edge of my spatula. I thought about how we assert ourselves upon Mother Nature and how she asserts herself upon us. I thought about her cycles; about time. Invisible clocks. Pressure cooker clocks. Biological clocks. The willow tree’s tendrils danced in the breeze, clung to my hair. Was she caressing me, or pleading for me to stop? I returned to the site again and again— performing acts of care. I did so with shears, a bottle, and bare hands. Dandelions flowered, then seeded and died more quickly than I could wish upon them. I thought about how we force ourselves upon Mother Nature and how she forces herself upon us. I thought about my cycles; about time. Invisible clocks. Pressure cooker clocks. Biological clocks. My fingertips brushed through blades of grass, aerated the earth. Was I caressing her, or pleading for her to stop?</p>",
+      "description_html": "",
+      "visibility": "private",
+      "content": "I extracted the earth— sometimes violently, other times tenderly. I did so with kitchen tools and bare hands. An earthworm emerged, then retracted from my touch when I tried to save it from the sharp edge of my spatula. I thought about how we assert ourselves upon Mother Nature and how she asserts herself upon us. I thought about her cycles; about time. Invisible clocks. Pressure cooker clocks. Biological clocks. The willow tree’s tendrils danced in the breeze, clung to my hair. Was she caressing me, or pleading for me to stop? I returned to the site again and again— performing acts of care. I did so with shears, a bottle, and bare hands. Dandelions flowered, then seeded and died more quickly than I could wish upon them. I thought about how we force ourselves upon Mother Nature and how she forces herself upon us. I thought about my cycles; about time. Invisible clocks. Pressure cooker clocks. Biological clocks. My fingertips brushed through blades of grass, aerated the earth. Was I caressing her, or pleading for her to stop?",
+      "description": "",
+      "source": null,
+      "image": null,
+      "embed": null,
+      "attachment": null,
+      "metadata": null,
+      "id": 42092677,
+      "base_class": "Block",
+      "class": "Text",
+      "user": {
+        "created_at": "2022-10-02T21:58:36.436Z",
+        "slug": "runa",
+        "username": "Runa ꩜",
+        "first_name": "Runa",
+        "last_name": "꩜",
+        "full_name": "Runa ꩜",
+        "avatar": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+        "avatar_image": {
+          "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+          "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
+        },
+        "channel_count": 307,
+        "following_count": 121,
+        "profile_id": 1784748,
+        "follower_count": 70,
+        "initials": "R꩜",
+        "can_index": false,
+        "metadata": {
+          "description": null
+        },
+        "is_premium": true,
+        "is_lifetime_premium": false,
+        "is_supporter": false,
+        "is_exceeding_connections_limit": false,
+        "is_confirmed": true,
+        "is_pending_reconfirmation": false,
+        "is_pending_confirmation": false,
+        "badge": "premium",
+        "id": 426715,
+        "base_class": "User",
+        "class": "User"
+      },
+      "position": 4,
+      "selected": false,
+      "connection_id": 88648447,
+      "connected_at": "2025-12-25T21:13:24.531Z",
+      "connected_by_user_id": 426715,
+      "connected_by_username": "Runa ꩜",
+      "connected_by_user_slug": "runa"
+    },
+    {
+      "title": "Pin on god’s favorite angel",
+      "updated_at": "2025-12-26T18:38:32.395Z",
+      "created_at": "2025-12-26T18:38:29.489Z",
+      "state": "available",
+      "comment_count": 0,
+      "generated_title": "Pin on god’s favorite angel",
+      "content_html": "<p>this user is interested in tea</p>",
+      "description_html": "",
+      "visibility": "private",
+      "content": "this user is interested in tea\n\n",
+      "description": "",
+      "source": {
+        "url": "https://www.pinterest.com/pin/31806741113726086/",
+        "title": "Pin on god’s favorite angel",
+        "provider": {
+          "name": "https://i.pinimg.com",
+          "url": "https://i.pinimg.com"
+        }
+      },
+      "image": {
+        "filename": "916e993a577e744ac3c84d129c09d89b.jpg",
+        "content_type": "image/jpeg",
+        "updated_at": "2025-12-26T18:38:30.702Z",
+        "thumb": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1My9vcmlnaW5hbF85MTZlOTkzYTU3N2U3NDRhYzNjODRkMTI5YzA5ZDg5Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+        },
+        "square": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1My9vcmlnaW5hbF85MTZlOTkzYTU3N2U3NDRhYzNjODRkMTI5YzA5ZDg5Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+        },
+        "display": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1My9vcmlnaW5hbF85MTZlOTkzYTU3N2U3NDRhYzNjODRkMTI5YzA5ZDg5Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+        },
+        "large": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1My9vcmlnaW5hbF85MTZlOTkzYTU3N2U3NDRhYzNjODRkMTI5YzA5ZDg5Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+        },
+        "original": {
+          "url": "https://d2w9rnfcy7mm78.cloudfront.net/42109053/original_916e993a577e744ac3c84d129c09d89b.jpg?1766774310?bc=0",
+          "file_size": 20648,
+          "file_size_display": "20.2 KB"
+        }
+      },
+      "embed": null,
+      "attachment": null,
+      "metadata": {
+        "automated_nsfw": "false"
+      },
+      "id": 42109053,
+      "base_class": "Block",
+      "class": "Image",
+      "user": {
+        "created_at": "2022-10-02T21:58:36.436Z",
+        "slug": "runa",
+        "username": "Runa ꩜",
+        "first_name": "Runa",
+        "last_name": "꩜",
+        "full_name": "Runa ꩜",
+        "avatar": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+        "avatar_image": {
+          "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+          "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
+        },
+        "channel_count": 307,
+        "following_count": 121,
+        "profile_id": 1784748,
+        "follower_count": 70,
+        "initials": "R꩜",
+        "can_index": false,
+        "metadata": {
+          "description": null
+        },
+        "is_premium": true,
+        "is_lifetime_premium": false,
+        "is_supporter": false,
+        "is_exceeding_connections_limit": false,
+        "is_confirmed": true,
+        "is_pending_reconfirmation": false,
+        "is_pending_confirmation": false,
+        "badge": "premium",
+        "id": 426715,
+        "base_class": "User",
+        "class": "User"
+      },
+      "position": 5,
+      "selected": false,
+      "connection_id": 88681220,
+      "connected_at": "2025-12-26T18:38:29.501Z",
+      "connected_by_user_id": 426715,
+      "connected_by_username": "Runa ꩜",
+      "connected_by_user_slug": "runa"
+    },
+    {
+      "title": "Just barely... &lt;&lt; It’s called “hiding and ignoring everyone says about the world” trust me, it works",
+      "updated_at": "2025-12-26T18:38:56.464Z",
+      "created_at": "2025-12-26T18:38:54.148Z",
+      "state": "available",
+      "comment_count": 0,
+      "generated_title": "Just barely... << It’s called “hiding and ignoring everyone says about the world” trust me, it works",
+      "content_html": "<p>This user survived 2016.</p>",
+      "description_html": "",
+      "visibility": "private",
+      "content": "This user survived 2016.\n\n",
+      "description": "",
+      "source": {
+        "url": "https://www.pinterest.com/pin/32510428557031955/",
+        "title": "Just barely... << It’s called “hiding and ignoring everyone says about the world” trust me, it works",
+        "provider": {
+          "name": "https://i.pinimg.com",
+          "url": "https://i.pinimg.com"
+        }
+      },
+      "image": {
+        "filename": "b11354df394eac5da187de2396414167.jpg",
+        "content_type": "image/jpeg",
+        "updated_at": "2025-12-26T18:38:55.320Z",
+        "thumb": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1OC9vcmlnaW5hbF9iMTEzNTRkZjM5NGVhYzVkYTE4N2RlMjM5NjQxNDE2Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+        },
+        "square": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1OC9vcmlnaW5hbF9iMTEzNTRkZjM5NGVhYzVkYTE4N2RlMjM5NjQxNDE2Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+        },
+        "display": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1OC9vcmlnaW5hbF9iMTEzNTRkZjM5NGVhYzVkYTE4N2RlMjM5NjQxNDE2Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+        },
+        "large": {
+          "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjEwOTA1OC9vcmlnaW5hbF9iMTEzNTRkZjM5NGVhYzVkYTE4N2RlMjM5NjQxNDE2Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+        },
+        "original": {
+          "url": "https://d2w9rnfcy7mm78.cloudfront.net/42109058/original_b11354df394eac5da187de2396414167.jpg?1766774335?bc=0",
+          "file_size": 25747,
+          "file_size_display": "25.1 KB"
+        }
+      },
+      "embed": null,
+      "attachment": null,
+      "metadata": {
+        "automated_nsfw": "false"
+      },
+      "id": 42109058,
+      "base_class": "Block",
+      "class": "Image",
+      "user": {
+        "created_at": "2022-10-02T21:58:36.436Z",
+        "slug": "runa",
+        "username": "Runa ꩜",
+        "first_name": "Runa",
+        "last_name": "꩜",
+        "full_name": "Runa ꩜",
+        "avatar": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+        "avatar_image": {
+          "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
+          "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
+        },
+        "channel_count": 307,
+        "following_count": 121,
+        "profile_id": 1784748,
+        "follower_count": 70,
+        "initials": "R꩜",
+        "can_index": false,
+        "metadata": {
+          "description": null
+        },
+        "is_premium": true,
+        "is_lifetime_premium": false,
+        "is_supporter": false,
+        "is_exceeding_connections_limit": false,
+        "is_confirmed": true,
+        "is_pending_reconfirmation": false,
+        "is_pending_confirmation": false,
+        "badge": "premium",
+        "id": 426715,
+        "base_class": "User",
+        "class": "User"
+      },
+      "position": 6,
+      "selected": false,
+      "connection_id": 88681228,
+      "connected_at": "2025-12-26T18:38:54.163Z",
+      "connected_by_user_id": 426715,
+      "connected_by_username": "Runa ꩜",
+      "connected_by_user_slug": "runa"
     }
   ],
   "base_class": "Channel",
@@ -222,7 +465,7 @@
   "nsfw?": false,
   "owner": {
     "created_at": "2025-03-22T17:44:49.774Z",
-    "updated_at": "2025-12-22T19:23:45.559Z",
+    "updated_at": "2026-01-12T22:19:32.461Z",
     "name": "omama.garden",
     "description": "",
     "visibility": 1,
@@ -243,10 +486,10 @@
       "thumb": "https://static.avatars.are.na/426715/small_4b804959496bc3115c0860e9fc26784d.jpg?1728955609",
       "display": "https://static.avatars.are.na/426715/medium_4b804959496bc3115c0860e9fc26784d.jpg?1728955609"
     },
-    "channel_count": 305,
-    "following_count": 120,
+    "channel_count": 307,
+    "following_count": 121,
     "profile_id": 1784748,
-    "follower_count": 67,
+    "follower_count": 70,
     "initials": "R꩜",
     "can_index": false,
     "metadata": {

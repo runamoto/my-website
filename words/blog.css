@@ -31,6 +31,8 @@ font-family: 'extra';
     font-size: 1.3em;
 }
 
+
+
 img {
 width: 100%;
 margin-top: 20px;
@@ -129,27 +131,10 @@ body.theme-contrast {
     color: var(--text);
 }
 
-/* Theme butttons thankq to danny.r on codepen*/
-.theme-controls {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin: 12px 0 18px 0;
-}
-.theme-controls button {
-    background: transparent;
-    border: 1px solid var(--muted);
-    color: var(--text);
-    padding: 6px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-family: 'body';
-}
-.theme-controls button.active {
-    border-color: var(--link);
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
-}
+
 
 .backlink a { color: var(--link); }
+
+
 
 
