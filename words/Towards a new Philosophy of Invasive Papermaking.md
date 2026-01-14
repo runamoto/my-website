@@ -13,10 +13,12 @@
 <div class="context">
 
 <div class="date"> 7, SEPTEMBER, 2025 </div>
+<div class="pg-spiral-div"><img class= "pg-spiral-img" src="/images/spiral1.png">
 
-<h2>Invasive Papermaking</h2>
+<h2>Towards a new Philosophy of Invasive Papermaking</h2>
 
-<h3> It's been more than half a year with Toronto Nature Stewards and I have been refecting on what ontologies our work as stewards create, especially around invasive plant species. In 2025 alone, we removed the equivalent of 4,606 large (90 L) bags worth of invasive plants from sites around Toronto, that the city disposed of for us. I beg the question of what our responsibility is towards these species of exterminated plants is and what it could be in the future. Should we continue a hostile narrative, or make room for another?</h3>
+<h3> It's been more than half a year with Toronto Nature Stewards and I have been reflecting on what ontologies our work as stewards start to create based on our experiences in the field. Especially around invasive plant species. </h3>
+<h3>In 2025 alone, we removed the equivalent of 4,606 large (90 L) bags worth of invasive plants from sites around Toronto, that the city disposed of for us. I beg the question of what our responsibility is towards these species of exterminated plants is and what it could look like in the future. Do we rely on a hostile narrative, or make room for another?</h3>
 
 </div>
 
@@ -29,9 +31,9 @@ I've been thinking about invasive plants and how we can re-situate our behavior,
 Once I began noticing this (often) playful, (sometimes) hostile mentality towards invasive species of plants I couldn't unsee it; these plant species didn't chose to be on this land but by association with settlers and imperialism are heard in the same frequency. And so,,
 If by boo-ing the invasive plants, people are subconsciously taking a political stance against colonialism...Are we truly directing our guilt/ anger/ frustration in a proactive way?
 
-I think this re-situation with the way we view invasive species is directly correlated with our embodied experiences with them. More specifically, with our hands. Often, when pulling them out of the dirt, or shoveling their roots out of the soil, we have to be harsh... Dare I say, violent...And understandably so. Try uprooting a fully grown phrag on a 30 degree summer afternoon. That shit is intense. 
+I think this re-situation with the way we view invasive species is not only directly correlated with the *language* we use in their reference but also our embodied experiences with them. More specifically, with our hands. Often, when pulling them out of the dirt, or shoveling their roots out of the soil, we have to be harsh... Dare I say, violent...And understandably so. Try uprooting a fully grown phrag on a 30 degree summer afternoon. That shit is intense. 
 
-When our embodied experience as well as our cognitive understanding of invasive species is so *negative* we will ultimately take a radical stance against it without much critical analysis into it's implications. 
+When our embodied experience as well as our cognitive understanding of invasive species is so *invasive* we will ultimately take a radical stance against it without much critical analysis into it's implications. 
 
 > How much agency did these invasive plants have when they were being transported to this land?
 
@@ -44,3 +46,5 @@ We have a responsibility to the land and all the creatures that reside on it, we
 And so, perhaps our practice can involve solidarity without destructive passion motivating us, and instead a pleasant, understanding of peace through earths relenting chaos. And maybe, something new will come of it.
 
 > I thank the tall seeding phrag at Yellow Creek for compositing with water and wood to form this inextricable matter I now call paper. I hope to continue this alchemical practice and fashion more substances so that we can make more room for native species to coexist in the spaces you were borne.
+
+more on the details of invasive papermaking [here](http://127.0.0.1:5501/blocks/42525230.html)

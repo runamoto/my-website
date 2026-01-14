@@ -9,6 +9,7 @@
 </style>
 <div class="context">
 <div class="date"> 7, SEPTEMBER, 2025 </div>
+<div class="pg-spiral-div"><img class= "pg-spiral-img" src="/images/spiral1.png">
 <h2> Meditations on touching the Earth</h2>
 <h3> an untitled (until now) diary entry </h3>
 </div>

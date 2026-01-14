@@ -16,6 +16,7 @@
 </style>
 <div class="context">
 <div class="date"> 3, JANUARY, 2026 </div>
+<div class="pg-spiral-div"><img class= "pg-spiral-img" src="/images/spiral1.png">
 <h2> First blog post </h2>
 <h3> an introduction to this webpage</h3>
 </div>

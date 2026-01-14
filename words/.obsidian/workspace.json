@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction.md",
+                "file": "Resolutions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Resolutions"
             }
           }
         ],
@@ -270,15 +270,16 @@
   },
   "active": "750e646a9006d755",
   "lastOpenFiles": [
+    "Re-enchantment.md",
+    "Meditations.md",
     "Foraging a space on the interweb.md",
     "Contemplations.md",
     "A moneyless economy in Toronto.md",
-    "Introduction.md",
-    "Re-enchantment.md",
-    "Resolutions.md",
     "Thinking out loud.md",
-    "Meditations.md",
-    "Invasive Papermaking.md",
+    "Towards a new Philosophy of Invasive Papermaking.md",
+    "Resolutions.md",
+    "Towards a new Philosophy of Invasive Papermaking.html",
+    "Introduction.md",
     "Introduction.html",
     "A moneyless economy in Toronto.html",
     "Invasive Papermaking.html",

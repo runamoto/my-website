@@ -18,10 +18,10 @@
     "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
     "bucket": "https://s3.amazonaws.com/arena_images-temp/",
     "success_action_status": "201",
-    "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDEtMjBUMjI6Mzc6NTMuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
+    "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDEtMjFUMTc6Mjc6NDUuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
     "acl": "public-read",
-    "signature": "SZRb8oOHfkuur4BM4I551dRoJhs=",
-    "expires": "2026-01-20T22:37:53.000Z"
+    "signature": "d2ZFM+4dkBr1G36RuM83ozLVV40=",
+    "expires": "2026-01-21T17:27:45.000Z"
   },
   "contents": [
     {

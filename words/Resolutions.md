@@ -7,6 +7,7 @@
 </style>
 <div class="context">
 <div class="date"> ?, ???????, 202? </div>
+<div class="pg-spiral-div"><img class= "pg-spiral-img" src="/images/spiral1.png">
 
 ## New Years Revolution 2025
  
