@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "body2";
-  src: url("./fonts/Abordage-Regular.otf");
+  src: url("./fonts/runatype.ttf");
 }
 
 html, body {
@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   position: relative;
   margin: 0;
-  background-color: #473f34;
+  background-image: url("./images/bgs/bg6.jpg");
   /* background image adjusterr*/
   background-size: cover;
   color: #575245;

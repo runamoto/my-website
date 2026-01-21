@@ -8,3 +8,29 @@ document.querySelectorAll("*").forEach((button) => {
     audio.play();
   });
 });
+
+// Rotate through background images on page load
+const backgrounds = [
+  "./images/bgs/bg1.JPG",
+  "./images/bgs/bg2.jpeg",
+  "./images/bgs/bg3.jpg",
+  "./images/bgs/bg4.jpg",
+  "./images/bgs/bg6.jpg",
+  "./images/bgs/bg7.jpg",
+  "./images/bgs/bg8.jpg",
+  "./images/bgs/bg9.jpg",
+  "./images/bgs/bg10.jpg",
+  "./images/bgs/bg11.jpg",
+];
+
+function setRandomBackground() {
+  const randomIndex = Math.floor(Math.random() * backgrounds.length);
+  const selectedBg = backgrounds[randomIndex];
+  document.body.style.backgroundImage = `url("${selectedBg}")`;
+}
+
+// Set random background when page loads
+window.addEventListener('load', setRandomBackground);
+
+// Also set it immediately in case load event fires before script runs
+setRandomBackground();

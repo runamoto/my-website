@@ -13,3 +13,13 @@ When I sense myself starting to perform, or judging someone else for what I beli
 When I feel it come up, I smile at it and acknowledge it as it passes by in the stream of consciousness "A feeling of worthlessness has arisen within me" "I am noticing I am yearning for acceptance inside me" "I am embodying an unwholesome energy". This way, I know that it is not an outside force, but a part of me that is trying to speak up, I have to listen intently at what she has to say with curiosity and compassion.
 
 on my birthday I cried while listening to "all night long by" Jenny Haval
+
+I did it again, fabricated my life to prove myself worthy to someone. This is killing me. Why do I need to pretend to be some one Im not, just to feel validated by my friends, friends who are supposed to love me unconditionally, but I fear that they see me as un worthy of intellectual endevors. It;s not my fault that they see me as such.
+
+I started going to just about any movie, just to emerge afterward to a day that had advanced another couple of turns. gaunt pedantic
+I don’t mind it when people put on an act.  Was it an act when I claimed that I liked knowing the names of things?
+She was a devoted smoker.  Smoking was something holy for her, something to make her sacred. I could see the big hurry she was in to get out of my life.
+The love was about as unbending and immaterial as anything else.
+I wasn’t in my own mind, or at least not always at home in it.  It scares me when people say they’ve been thinking about me, because whenever I find myself starting to think about people, it usually involves tugging them this way and that crackpot erotica
+I kept waiting for something interesting to show up on the bodies.  I must have been expecting a natural wonder of some kind.obscurata in her eyes
+she had a way of saying things that made you feel bad about the way you did them. 
