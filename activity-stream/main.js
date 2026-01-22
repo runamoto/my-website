@@ -156,8 +156,7 @@ async function create_html(channel, slice=5) {
 
 			<label for="c" class="fixed t4">normal</label>
 		  <input type="radio" name="dawg" value="c" class="fixed t4">
-			<label for="c" class="fixed t5">funky</label>
-		  <input type="radio" name="dawg" value="c" class="fixed t5">
+
 
 			<label for="c" class="fixed t6">list</label>
 		  <input type="radio" name="dawg" value="c" class="fixed t6">
@@ -199,7 +198,7 @@ async function create_html(channel, slice=5) {
 			html += `
 				<div class="block-list">
 					<a href='./blocks/${block.id}.html'>
-						<h1>${contentsliced.split('\n')[0].slice(0, 25) + "..."}</h1>
+						<h1>${date}</h1>
 					</a>
 				</div>
 
