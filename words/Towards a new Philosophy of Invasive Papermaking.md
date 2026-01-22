@@ -47,4 +47,4 @@ And so, perhaps our practice can involve solidarity without destructive passion 
 
 > I thank the tall seeding phrag at Yellow Creek for compositing with water and wood to form this inextricable matter I now call paper. I hope to continue this alchemical practice and fashion more substances so that we can make more room for native species to coexist in the spaces you were borne.
 
-more on the details of invasive papermaking [here](http://127.0.0.1:5501/blocks/42525230.html)
+more on the details of invasive papermaking [here](https://omama.garden/activity-stream/papermaking-process.html~)
