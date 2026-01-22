@@ -59,7 +59,7 @@ body {
   right: 0;
   bottom: 10px;
   background-color: #9ea66b;
-  border-radius: 20px;
+  border-radius: 0px;
   pointer-events: none;
   z-index: -1;
 }
@@ -92,8 +92,8 @@ img {
 }
 
 #topBar {
-  margin-top:10px;
-  border-radius: 15px 15px 0 0;
+  margin-top:20px;
+  border-radius: 0px 0px 0 0;
   width: 100%;
   height: 30px;
   padding: 20px;
@@ -121,7 +121,7 @@ img {
   background-size: 300px;
   font-size:3.5vw;
   text-align: center;
-  border-radius: 15px 15px 0 0;
+  border-radius: 0px 0px 0 0;
 }
 
 #header-container .header h1 {
@@ -154,7 +154,7 @@ img {
   background-color: #f4ecd1;
   /* navbar color */
   width: 100%;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 #navbar ul {
@@ -204,7 +204,7 @@ aside {
   width: 200px;
   margin: 20px;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 /* pinboard box */
@@ -239,7 +239,7 @@ main {
   color:#f0e5e7;
   flex: 1 1 60%;
   order: 2;
-  border-radius: 10px;
+  border-radius: 0px;
   margin: 20px;
   padding: 20px;
   border: none;
