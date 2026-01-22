@@ -199,7 +199,7 @@ async function create_html(channel, slice=5) {
 			html += `
 				<div class="block-list">
 					<a href='./blocks/${block.id}.html'>
-						<h1>${contentsliced.split('\n')[0]}</h1>
+						<h1>${contentsliced.split('\n')[0].slice(0, 25) + "..."}</h1>
 					</a>
 				</div>
 
