@@ -22,4 +22,4 @@ She was a devoted smoker.  Smoking was something holy for her, something to mak
 The love was about as unbending and immaterial as anything else.
 I wasn’t in my own mind, or at least not always at home in it.  It scares me when people say they’ve been thinking about me, because whenever I find myself starting to think about people, it usually involves tugging them this way and that crackpot erotica
 I kept waiting for something interesting to show up on the bodies.  I must have been expecting a natural wonder of some kind.obscurata in her eyes
-she had a way of saying things that made you feel bad about the way you did them. 
+she had a way of saying things that made you feel bad about the way you did them
