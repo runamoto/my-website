@@ -1,0 +1,245 @@
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+    @font-face {
+      font-family: "rom";
+      src: url("../fonts/ABCROMMono-Bold-Trial.otf");
+    }
+
+    @font-face {
+      font-family: "body";
+      src: url("../fonts/ABCDiatype-Regular-Trial.otf");
+    }
+
+    @font-face {
+      font-family: "AT";
+      src: url("../fonts/AmericanTypewriter.otf");
+    }
+
+    @font-face {
+      font-family: "mono";
+      src: url("../fonts/ABCMonumentGroteskMono-Regular-Trial.otf");
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'mono';
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      background-color: #c7d468;
+      color:rgb(128, 39, 87);
+			text-decoration: none;
+
+
+    }
+
+    h4 {
+      padding-bottom: 0.5em;
+      font-size: 2rem;
+      font-family: "mono";
+      font-weight: 100;
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 1rem;
+      font-weight: 300;
+      line-height: 1.3em;
+    }
+
+    a {
+      all: unset;
+      cursor: crosshair;
+      text-decoration: underline;
+      margin-top: 0.5rem;
+    }
+
+    a p {
+      font-weight: 300;
+      font-size: 1rem;
+      font-family: "mono";
+      margin-top: 0.5rem;
+    }
+
+    a p:hover {
+      background-color: black;
+      color: white;
+    }
+
+    img,
+    video {
+      max-width: 90%;
+      max-height: 80vh;
+    }
+
+    body {
+      background-color: white;
+      font-family: "body", sans-serif;
+    }
+
+    .decor {
+        font-size: 3em;
+    padding: .4em 0;
+    margin: 0;
+    line-height: 0;
+  letter-spacing: .1em;
+    }
+
+      button, a.button {
+        background-color: #c7d468;
+      color:rgb(128, 39, 87);
+      font-family: 'mono';
+      font-size: 18px;
+      border: none;
+      }
+      a.button{
+        text-decoration: none;
+      }
+      button::after a.button::after{
+        content: "";
+      }
+
+      button:hover::after,
+      button:focus::after, a.button:hover::after{
+        content: "!!";
+      }
+
+    .main {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: 25% 75%;
+      grid-gap: 2%;
+
+      background-color: #f6eff1 ;
+      color: rgb(196, 61, 133);
+
+    }
+
+
+
+    .project-container {
+      overflow-y: scroll;
+    }
+
+    .links {
+      position: absolute;
+      bottom: 2em;
+      left: 2em;
+    }
+
+    .info {
+      padding: 2em;
+      position: relative;
+      background-color: #D7D7D5;
+      box-shadow: 0px 0px 8px 3px #bdbdbd1a;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+
+    .bio-text {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+        .bio-text2 {
+      margin-top: 1.5em;
+      margin-bottom: 5em;
+    }
+
+    .channel {
+      padding-top: 2em;
+      width: 100%;
+      display: grid;
+      grid-template-columns: calc(45% - 1em) calc(55% - 1em);
+      grid-gap: 2em;
+    }
+
+    .image-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.1em;
+        padding-right: 2em;
+    }
+
+    .metadata-container {
+      max-width: 30em;
+    }
+
+    .block {
+      margin-bottom: 1em;
+        margin-right: -1em;
+    }
+
+    .fullsizeable {
+      cursor: pointer;
+      transition: all 200ms;
+    }
+
+    .fullsizeable:hover {
+      transform: scale(1.02);
+    }
+
+    .fullsize {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222e;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .fullsize img,
+    .fullsize video {
+      max-width: 98%;
+      max-height: 90vh;
+    }
+    /* .businesscard {
+      z-index: 100000;
+      position: absolute;
+      width: 200px;
+      height: 500px;
+      left: 20px;
+      top: 20px;
+    } */
+
+		@media only screen and (max-width: 800px) {
+			.main {
+				display: block;
+				overflow-y: scroll;
+			}
+
+
+			.links {
+				position: inherit;
+				bottom: 0em;
+				left: 0em;
+				margin-top: 2em;
+			}
+
+			img {
+				max-width: calc(100% - 2em);
+				max-height: 80vh;
+			}
+
+			.channel {
+				display: block;
+				width: calc(100% - 4em);
+				margin: 2em;
+				border-top: 1px solid #ddd;
+			}
+
+			.metadata-container{
+				max-width: 30em;
+				width: calc(92% - 2em);
+			}
+		}
