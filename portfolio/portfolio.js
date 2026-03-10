@@ -5,6 +5,7 @@ function setup() {
 
 let blocks = [];
 let channels = {}
+let galleryView = false;
 
 function render_channel(channel) {
   channels[channel.slug] = channel
@@ -64,6 +65,27 @@ function closeFullPage(){
   document.querySelector('.full-page').remove()
 }
 
+function renderGallery() {
+  let thumbnails = Object.values(channels).map(channel => {
+    let firstBlock = channel.contents.find(block => block.class === "Image");
+    if (!firstBlock) return ''; // skip if no image
+    let imgSrc = firstBlock.image?.display.url;
+    return `<div class="thumbnail" data-slug="${channel.slug}">
+      <img src="${imgSrc}" alt="${channel.title}">
+      <h3>${channel.title}</h3>
+    </div>`;
+  }).join('');
+  document.querySelector('.project-container').innerHTML = `<div class="gallery-grid">${thumbnails}</div>`;
+  // Add click listeners
+  document.querySelectorAll('.thumbnail').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      let slug = thumb.getAttribute('data-slug');
+      let channel = channels[slug];
+      renderFullPage(channel);
+    });
+  });
+}
+
 function render_block(block) {
   blocks.push(block);
   if (block.class == "Image") return image(block);
@@ -116,7 +138,20 @@ let mountonclick = () => {
 fetch("./data.json")
   .then((res) => res.json())
   .then(init)
-  .then(mountonclick);
+  .then(mountonclick)
+  .then(() => {
+    document.getElementById('gallery-toggle').addEventListener('click', () => {
+      galleryView = !galleryView;
+      document.querySelector('.project-container').innerHTML = '';
+      if (galleryView) {
+        renderGallery();
+      } else {
+        // Re-render normal view
+        Object.values(channels).forEach(render_channel);
+        mountonclick(); // re-mount click listeners
+      }
+    });
+  });
 
 function tagButton(tag){ console.log(tag);
   let button = document.getElementById(tag);

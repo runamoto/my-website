@@ -296,3 +296,35 @@ grid-template-columns: 1fr;
 				width: calc(92% - 2em);
 			}
 		}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.thumbnail {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.thumbnail h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #585a28;
+}
