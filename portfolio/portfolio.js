@@ -57,7 +57,8 @@ function renderFullPage(channel){
   fullPage.appendChild(contents)
   fullPage.classList.add('full-page')
 
-    document.body.appendChild(fullPage)
+  document.body.appendChild(fullPage)
+  mountonclick()
 }
 
 function closeFullPage(){
