@@ -101,6 +101,7 @@ color: white;
     video {
       max-width: 100%;
       max-height: 80vh;
+      padding-right:1em;
     }
 
     body {
@@ -218,7 +219,7 @@ font-family: "body", sans-serif;
     }
 
     .channel {
-      padding-top: 2em;
+      padding-top: 0.5em;
       width: 100%;
       display: grid;
       grid-template-columns: calc(45% - 1em) calc(55% - 1em);
@@ -328,6 +329,7 @@ font-family: "body", sans-serif;
 			.main {
 				display: block;
 				overflow-y: scroll;
+
 			}
 
 
