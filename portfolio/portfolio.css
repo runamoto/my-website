@@ -1,8 +1,8 @@
     @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
     @font-face {
-      font-family: "rom";
-      src: url("../fonts/ABCROMMono-Bold-Trial.otf");
+      font-family: "small";
+      src: url("../fonts/santana-mono.woff2");
     }
 
     @font-face {
@@ -44,77 +44,57 @@
   -webkit-font-smoothing: antialiased;
     }
 
-    .close-button {
-      margin-bottom: 2em; 
-    }
-
 
     h1 {
 font-family: 'AT';
-  letter-spacing: 0.05em;
-  font-size: 1.4rem;
-  margin-bottom: 1.5em;
-  text-transform: capitalize;
-  background-color: none;
-  color: #27272a;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
-  padding-bottom: .8em;
+letter-spacing: 0.05em;
+font-size: 1.4rem;
+margin-bottom: 1.5em;
+text-transform: capitalize;
+background-color: none;
+color: #27272a;
+text-decoration: none;
+text-transform: uppercase;
+/* border-bottom: 0.5px solid; */
+padding-bottom: .8em;
     }
 
     h4 {
-      text-transform: uppercase;
-      padding-bottom: 0.5em;
-      font-size: 2rem;
-      font-family: "AT";
-      font-weight: 100;
-      letter-spacing: 0.02em;
+text-transform: uppercase;
+padding-bottom: 0.5em;
+font-size: 2rem;
+font-family: "AT";
+font-weight: 100;
+letter-spacing: 0.02em;
     }
 
     p {
-      letter-spacing: 0px;
-      font-size: 15px;
-      margin-top: 1rem;
-      font-weight: 300;
-      line-height: 1.3em;
-      max-width: 68ch;
-    
-
+letter-spacing: 0px;
+font-size: 15px;
+margin-top: 1rem;
+font-weight: 300;
+line-height: 1.3em;
+max-width: 68ch;
     }
 
     a {
-      all: unset;
-      cursor: crosshair;
-      margin-top: 0.5rem;
+all: unset;
+cursor: crosshair;
+margin-top: 0.5rem;
+text-decoration: underline;
     }
 
     a p {
-    text-transform: uppercase;
-      font-weight: 100;
-      font-size: .9rem;
-      font-family: "mono";
-      margin-top: 0.5rem;
-
-    }
-
-    #gallery-toggle{
-       text-transform: uppercase;
-      font-weight: 300;
-      font-size: 1rem;
-      font-family: "mono";
-      margin-top: 0.5rem;
-      position: absolute;
-      right: 1em;
-      top: .5em;
+text-transform: uppercase;
+font-weight: 100;
+font-family: "small";
+margin-top: 0.5rem;
     }
 
 
     a p:hover {
-      
-      background-color: rgb(203, 203, 203);
-      color: white;
-      
+background-color: rgb(157, 129, 129);
+color: white;
     }
 
     img,
@@ -124,23 +104,35 @@ font-family: 'AT';
     }
 
     body {
-      background-color: white;
-      font-family: "body", sans-serif;
+background-color: white;
+font-family: "body", sans-serif;
     }
 
-    .header {
+.header {
+  height: 60px;
   padding-left: 30px;
   display: flex;
-  text-align: center;
   background: #fff4d7;
-  font-size: 30px;
-  height: 60px;
   border-bottom: 1px solid #222;
 }
-.header > *{
-margin-right: 10px;
 
+.header > *{
+  font-family: "small";
+  font-size: 0.7em;
+  margin-right: 10px;
+  margin-top: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+  #gallery-toggle{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "small";
+  margin-top: 1.5em;
+  position: absolute;
+  right: 1em;
+    }
 
     .decor {
     font-family: "odd";
@@ -157,7 +149,7 @@ margin-right: 10px;
       letter-spacing: 0px;
       padding: 2px;
       color: #1a193c;
-        font-family: "AT";
+        font-family: "small";
       font-size: .75em;
       border: none;
       text-transform: uppercase;
@@ -191,11 +183,9 @@ margin-right: 10px;
       grid-gap: 2%;
 
       background-color: #fff4d7 ;
-      color: #585a28;
+      color: #463325;
 
     }
-
-
 
     .project-container {
       overflow-y: scroll;
@@ -222,7 +212,7 @@ margin-right: 10px;
       margin-top: 1em;
       margin-bottom: 1em;
     }
-        .bio-text2 {
+    .bio-text2 {
       margin-top: 1.5em;
       margin-bottom: 5em;
     }
@@ -234,33 +224,76 @@ margin-right: 10px;
       grid-template-columns: calc(45% - 1em) calc(55% - 1em);
       grid-gap: 2em;
     }
-    .full-page{
+
+/* FULL SIZE VIEW */
+
+    .fullpage-header {
+      display: flex;
+      flex-direction: row;           
+      flex-wrap: nowrap;             
+      justify-content: space-between; 
+      padding-bottom: 2em;
+    }
+
+      .close-button {
+      margin-bottom: 2em; 
+    }
+
+    .hashtags-inline p {
+      font-size: 0.6em;
+      margin-right: 50px;
+      text-align: left;
+      font-family: "small";
+      color: #585a28;
+    text-transform: uppercase;
+}
+
+    .fullpage-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff4d7;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+
+.fullpage-backdrop.visible {
+  opacity: 0.6;
+}
+
+.full-page{
       position: fixed;
       top:2vh;
-      left: 2vw;
-      width: 96vw;
+      left: 25vw;
+      width: 51vw;
       height: 96vh;
-      background-color:#edede9;
+      background-color:#fff4d7;
       padding: 2em;
       overflow-y: scroll;
-      box-shadow: 0 0 51px 5px rgba(0,0,0,.5);
+      box-shadow: 0 0 51px 5px #fff4d7 ;
+      text-decoration: none;
+      z-index: 1000;
+      border: 1px dashed #585a28;;
     }
 
-    .image-container {
-      display: grid;
-grid-template-columns: 1fr;
-      grid-gap: 0.1em;
-        padding-right: 2em;
-    }
 
-    .metadata-container {
-      max-width: 30em;
-    }
+  .full-page h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+  }
 
-    .block {
-      margin-bottom: 1em;
-        margin-right: -1em;
-    }
+      .full-page img {
+      display: flex;    
+      margin-bottom: 2em;
+      
+  }
+
+
+/* IMAGES BECOME BIGGER WHEN HOVERED OR CLICKED  */
 
     .fullsizeable {
       cursor: pointer;
@@ -277,7 +310,7 @@ grid-template-columns: 1fr;
       align-items: center;
       background-color: #222e;
       position: fixed;
-      z-index: 1;
+      z-index: 2000;
       left: 0;
       top: 0;
       height: 100vh;
@@ -289,14 +322,7 @@ grid-template-columns: 1fr;
       max-width: 98%;
       max-height: 90vh;
     }
-    /* .businesscard {
-      z-index: 100000;
-      position: absolute;
-      width: 200px;
-      height: 500px;
-      left: 20px;
-      top: 20px;
-    } */
+
 
 		@media only screen and (max-width: 800px) {
 			.main {
@@ -347,3 +373,5 @@ grid-template-columns: 1fr;
   object-fit: contain;
   background-color: #fff4d7; /* optional, to fill space */
 }
+
+

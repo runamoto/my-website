@@ -31,14 +31,38 @@ function render_channel(channel) {
 
 function renderFullPage(channel){
   let blocks = channel.contents.map(render_block).join("");
-  let button = document.createElement('button')
-  button.classList.add('close-button')
-  button.innerText = "close"
-  button.onclick = closeFullPage
-    // code to make the full page using channel contents
-  let fullPage = document.createElement('div')
+// ---------------------------------------------------------
+  // create backdrop and fade it in
+  let backdrop = document.createElement('div');
+  backdrop.classList.add('fullpage-backdrop');
+  document.body.appendChild(backdrop);
+  // force reflow then add class to trigger transition
+  window.getComputedStyle(backdrop).opacity;
+  backdrop.classList.add('visible');
+// -----------------------------------------------------
+  // header bar containing close button and optional hashtags text
+  let header = document.createElement('div');
+  header.classList.add('fullpage-header');
 
-  let contents = document.createElement('div')
+  // if there's a hashtags block include its content before the button
+  let hashtagsBlock = channel.contents.find(b => b.title && b.title.toLowerCase() === "hashtags");
+  if (hashtagsBlock) {
+    let span = document.createElement('span');
+    span.classList.add('hashtags-inline');
+    span.innerHTML = hashtagsBlock.content_html;
+    header.appendChild(span);
+  }
+
+  let button = document.createElement('button');
+  button.classList.add('close-button');
+  button.innerText = "close";
+  button.onclick = closeFullPage;
+  header.appendChild(button);
+
+  // code to make the full page using channel contents
+  let fullPage = document.createElement('div');
+
+  let contents = document.createElement('div');
   contents.innerHTML = `
     <div>
     <h1>${channel.title}</h1>
@@ -53,19 +77,25 @@ function renderFullPage(channel){
     </div>
     `;
 
-  fullPage.appendChild(button)
-  fullPage.appendChild(contents)
-  fullPage.classList.add('full-page')
+  fullPage.appendChild(header);
+  fullPage.appendChild(contents);
+  fullPage.classList.add('full-page');
 
-  document.body.appendChild(fullPage)
-  mountonclick()
+  document.body.appendChild(fullPage);
+  mountonclick();
 }
-
+// ---------------------
 function closeFullPage(){
   console.log('called')
-  document.querySelector('.full-page').remove()
+  const full = document.querySelector('.full-page');
+  if (full) full.remove();
+  const back = document.querySelector('.fullpage-backdrop');
+  if (back) {
+    back.classList.remove('visible');
+    back.addEventListener('transitionend', () => back.remove(), { once: true });
+  }
 }
-
+// --------------------
 function renderGallery() {
   let thumbnails = Object.values(channels).map(channel => {
     let firstBlock = channel.contents.find(block => block.class === "Image");
@@ -88,6 +118,11 @@ function renderGallery() {
 
 function render_block(block) {
   blocks.push(block);
+  // if the block is a hashtags block, render a special container so it can be styled
+  if (block.title && block.title.toLowerCase() === "hashtags") {
+    // content_html usually contains the raw html for the block
+    return `<div class="block hashtags">${block.content_html}</div>`;
+  }
   if (block.class == "Image") return image(block);
   if (block.class == "Attachment" && block.attachment.extension == "mp4")
     return mp4(block);
