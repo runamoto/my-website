@@ -12,7 +12,7 @@ function render_channel(channel) {
   let blocks = channel.contents.slice(0, 1).map(render_block).join("");
 
   document.querySelector(".project-container").innerHTML += `
-    <div class="channel" id="channel-${channel?.slug}" tags="#all ${channel?.metadata?.description}">
+    <div class="channel tagged" id="channel-${channel?.slug}" tags="#all ${channel?.metadata?.description}">
       <div class="metadata-container" >
         <h1> ${channel.title}</h1>
         <p>${
@@ -70,9 +70,8 @@ function renderGallery() {
     let firstBlock = channel.contents.find(block => block.class === "Image");
     if (!firstBlock) return ''; // skip if no image
     let imgSrc = firstBlock.image?.display.url;
-    return `<div class="thumbnail" data-slug="${channel.slug}">
+    return `<div class="thumbnail tagged" data-slug="${channel.slug}" tags="#all ${channel?.metadata?.description}">
       <img src="${imgSrc}" alt="${channel.title}">
-      <h3>${channel.title}</h3>
     </div>`;
   }).join('');
   document.querySelector('.project-container').innerHTML = `<div class="gallery-grid">${thumbnails}</div>`;
@@ -160,7 +159,7 @@ function tagButton(tag){ console.log(tag);
     return
   }
   button.onclick = () => {
-    document.querySelectorAll('.channel').forEach((channel) => {
+    document.querySelectorAll('.tagged').forEach((channel) => {
       let tags = channel.getAttribute('tags');
       if (tags.includes("#"+tag)) {
         channel.style.display = 'block';
