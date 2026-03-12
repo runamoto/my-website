@@ -66,7 +66,13 @@ text-decoration: none;
 text-transform: uppercase;
 /* border-bottom: 0.5px solid; */
 padding-bottom: .8em;
+margin-top: 1em;
+
     }
+
+    .metadata-container h1 {
+  border-bottom: 0.5px solid;
+}
 
     h4 {
 text-transform: uppercase;
@@ -110,7 +116,6 @@ color: white;
     video {
       max-width: 100%;
       max-height: 80vh;
-      padding-right:1em;
     }
 
     body {
@@ -190,7 +195,6 @@ font-family: "body", sans-serif;
 
       display: grid;
       grid-template-columns: 25% 75%;
-      grid-gap: 2%;
 
       background-color: #fff4d7 ;
       color: #463325;
@@ -199,7 +203,7 @@ font-family: "body", sans-serif;
 
     .project-container {
       overflow-y: scroll;
-      width: 97%;
+      width: 100%;
     }
 
     .links {
@@ -233,6 +237,8 @@ font-family: "body", sans-serif;
       display: grid;
       grid-template-columns: calc(45% - 1em) calc(55% - 1em);
       grid-gap: 2em;
+      border-bottom: 1px solid #2222;
+      padding: .75em 2em;
     }
 
 /* FULL SIZE VIEW */
@@ -271,7 +277,7 @@ font-family: "body", sans-serif;
 }
 
 .fullpage-backdrop.visible {
-  opacity: 0.6;
+  opacity: 0.87;
 }
 
 .full-page{
@@ -338,9 +344,16 @@ font-family: "body", sans-serif;
 			.main {
 				display: block;
 				overflow-y: scroll;
-
 			}
 
+      #gallery-toggle {
+        display: none;
+      }
+
+      .full-page {
+        left: 2vw;
+        width: 96vw;
+      }
 
 			.links {
 				position: inherit;
@@ -356,9 +369,8 @@ font-family: "body", sans-serif;
 
 			.channel {
 				display: block;
-				width: calc(100% - 4em);
-				margin: 2em;
-				border-top: 1px solid #ddd;
+				width: 100%;
+				/* border-top: 1px solid #ddd; */
 			}
 
 			.metadata-container{

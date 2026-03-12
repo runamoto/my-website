@@ -30,10 +30,10 @@ function render_channel(channel) {
 }
 
 function renderFullPage(channel){
-  let blocks = channel.contents.map(render_block).join("");
 // ---------------------------------------------------------
   // create backdrop and fade it in
   let backdrop = document.createElement('div');
+  backdrop.onclick = () => closeFullPage()
   backdrop.classList.add('fullpage-backdrop');
   document.body.appendChild(backdrop);
   // force reflow then add class to trigger transition
@@ -52,6 +52,10 @@ function renderFullPage(channel){
     span.innerHTML = hashtagsBlock.content_html;
     header.appendChild(span);
   }
+
+  let blocks = channel.contents.filter(b => !(b.title && b.title.toLowerCase() === "hashtags"))
+  .map(render_block).join("");
+
 
   let button = document.createElement('button');
   button.classList.add('close-button');
