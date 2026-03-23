@@ -50,7 +50,9 @@
   display: none;
 }
 
-
+:root{
+  --bg: #fff4d7;;
+}
 
 
 
@@ -127,14 +129,14 @@ font-family: "body", sans-serif;
   height: 60px;
   padding-left: 30px;
   display: flex;
-  background: #fff4d7;
+  background: var(--bg);
   border-bottom: 1px solid #222;
 }
 
 .header > *{
   font-family: "small";
   font-size: 0.7em;
-  margin-right: 10px;
+  margin-right: 22px;
   margin-top: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
@@ -160,7 +162,7 @@ font-family: "body", sans-serif;
 
       button, a.button {
         /* text-indent: 5px; */
-      background-color: #fff4d7;
+      background-color: var(--bg);
       letter-spacing: 0px;
       padding: 2px;
       color: #1a193c;
@@ -196,7 +198,7 @@ font-family: "body", sans-serif;
       display: grid;
       grid-template-columns: 25% 75%;
 
-      background-color: #fff4d7 ;
+      background-color: var(--bg) ;
       color: #463325;
 
     }
@@ -215,7 +217,7 @@ font-family: "body", sans-serif;
     .info {
       padding: 2em;
       position: relative;
-      background-color: #fff4d7;
+      background-color: var(--bg);
       border-right: 1px dashed #585a28;
       box-shadow: 0px 0px 8px 3px #bdbdbd1a;
       overflow-y: scroll;
@@ -270,7 +272,7 @@ font-family: "body", sans-serif;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #fff4d7;
+  background: var(--bg);
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 999;
@@ -286,10 +288,10 @@ font-family: "body", sans-serif;
       left: 25vw;
       width: 51vw;
       height: 96vh;
-      background-color:#fff4d7;
+      background-color:var(--bg);
       padding: 2em;
       overflow-y: scroll;
-      box-shadow: 0 0 51px 5px #fff4d7 ;
+      box-shadow: 0 0 51px 5px var(--bg) ;
       text-decoration: none;
       z-index: 1000;
       border: 1px dashed #585a28;;
@@ -378,7 +380,7 @@ font-family: "body", sans-serif;
 				width: calc(92% - 2em);
 			}
 		}
-    
+
 
 .gallery-grid {
   display: grid;
@@ -395,7 +397,7 @@ font-family: "body", sans-serif;
   width: 100%;
   aspect-ratio: 1080 / 1350;
   object-fit: contain;
-  background-color: #fff4d7; /* optional, to fill space */
+  background-color: var(--bg); /* optional, to fill space */
 }
 
 
